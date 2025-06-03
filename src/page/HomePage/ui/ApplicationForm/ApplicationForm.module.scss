@@ -1,0 +1,316 @@
+.containerApplicatonForm {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+
+    aside {
+        position: relative;
+        width: 35%;
+
+        h3 {
+            position: absolute;
+            top: 32px;
+            right: 33px;
+            line-height: 1;
+            writing-mode: sideways-lr;
+            font-size: 2.133rem;
+            font-weight: 400;
+            font-family: $font-hikasami;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
+
+    .applicationForm {
+        background: $primary-violet;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        padding: 33px 32px;
+        width: 60%;
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            font-family: $font-hikasami;
+            color: $primary-white;
+            margin-bottom: 32px;
+        }
+
+        .containerInputs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 40px;
+
+            input[type=text] {
+                display: block;
+                outline: none;
+                padding: 24px 15.5px;
+                width: 100%;
+                height: 44px;
+                border-radius: 10px;
+                font-size: 0.933rem;
+                font-weight: 400;
+                font-family: $font-hikasami;
+                border: none;
+
+                &::placeholder {
+                    color: black;
+                }
+            }
+        }
+
+        .containerPaymentMethod {
+            margin-bottom: 48px;
+
+            h4 {
+                font-size: 1.067rem;
+                font-weight: 500;
+                font-family: $font-hikasami;
+                color: $primary-white;
+                margin-bottom: 24px;
+            }
+
+            .paymentMethod {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    input[type=radio] {
+                        appearance: none;
+                        width: 4.975vw;
+                        height: 4.975vw;
+                        max-width: 32px;
+                        max-height: 32px;
+                        border-radius: 9999px;
+                        background: white;
+                        position: relative;
+
+                        &:checked::after {
+                            content: "";
+                            display: block;
+                            width: 2.488vw;
+                            height: 2.488vw;
+                            max-width: 16px;
+                            max-height: 16px;
+                            background: $accent-gradient;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+
+                        }
+                    }
+
+                    label {
+                        font-size: 0.933rem;
+                        font-family: $font-hikasami;
+                        font-weight: 400;
+                        color: $primary-white;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (min-width:768px) {
+    .containerApplicatonForm {
+
+        aside {
+            width: 35%;
+
+            h3 {
+                top: 37px;
+                right: 45px;
+            }
+        }
+
+        .applicationForm {
+            padding: 37px 45px;
+            width: 63%;
+
+            .containerInputs {
+                gap: 20px;
+                margin-bottom: 40px;
+            }
+
+            .containerPaymentMethod {
+                margin-bottom: 48px;
+
+                h4 {
+                    font-size: 1.067rem;
+                    font-weight: 500;
+                    font-family: $font-hikasami;
+                    color: $primary-white;
+                    margin-bottom: 24px;
+                }
+
+                .paymentMethod {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 25px;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        input[type=radio] {
+                            width: 2.604vw;
+                            height: 2.604vw;
+
+                            &:checked::after {
+                                width: 1.302vw;
+                                height: 1.302vw;
+                            }
+                        }
+
+                        label {
+                            font-size: 0.933rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .containerApplicatonForm {
+        width: 93%;
+        margin: 0 auto;
+        padding-bottom: 200px;
+
+        aside {
+            width: 49%;
+
+            h3 {
+                position: absolute;
+                top: 45px;
+                left: 55px;
+                writing-mode: initial;
+                font-size: 2.476rem;
+            }
+
+            img {
+                object-fit: cover;
+                border-radius: 40px;
+            }
+        }
+
+
+        .applicationForm {
+            padding: 45px 55px;
+            width: 49%;
+            border-radius: 40px;
+
+            h3 {
+                font-size: 2.286rem;
+                margin-bottom: 50px;
+                max-width: 500px;
+            }
+
+            .containerInputs {
+                gap: 24px;
+                margin-bottom: 32px;
+
+                input[type=text] {
+                    padding: 30px 20px;
+                    border-radius: 20px;
+                    font-size: 20px;
+                }
+            }
+
+            .containerPaymentMethod {
+                margin-bottom: 60px;
+
+                h4 {
+                    font-size: 1.524rem;
+                    margin-bottom: 24px;
+                }
+
+                .paymentMethod {
+                    flex-direction: column;
+                    gap: 20px;
+
+                    div {
+                        gap: 16px;
+
+                        label {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .containerApplicatonForm {
+        .applicationForm {
+            .containerPaymentMethod {
+                margin-bottom: 80px;
+
+                .paymentMethod {
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .containerApplicatonForm {
+        aside {
+            h3 {
+                max-width: 624px;
+                top: 80px;
+                left: 80px;
+                font-size: 4.571rem;
+            }
+        }
+
+        .applicationForm {
+            padding: 87px 80px;
+            width: 49%;
+
+            h3 {
+                font-size: 3.048rem;
+                margin-bottom: 100px;
+            }
+
+            .containerPaymentMethod {
+                .paymentMethod {
+                    gap: 48px;
+
+                    div {
+                        gap: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+}

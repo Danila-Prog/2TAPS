@@ -1,0 +1,79 @@
+.reviewAboutCard {
+    padding: 24px;
+    background: $primary-white;
+    border-radius: 20px;
+
+    .headerReviewAboutCard {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+
+        h4 {
+            font-size: 1.6rem;
+            font-family: $font-hikasami;
+            font-weight: 500;
+        }
+
+        .containerStars {
+            display: flex;
+            gap: 4px;
+
+            img {
+                width: 3.98vw;
+                height: 3.98vw;
+                max-width: 27px;
+                max-height: 27px;
+            }
+        }
+    }
+
+    main {
+        p {
+            font-size: 1.067rem;
+            font-family: $font-hikasami;
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .reviewAboutCard {
+        padding: 32px 40px;
+
+        main {
+            p {
+                width: 95%;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .reviewAboutCard {
+        padding: 32px;
+        width: 48%;
+
+        .headerReviewAboutCard {
+
+            h4 {
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .containerStars {
+                gap: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .reviewAboutCard {
+        padding: 32px;
+        width: 32%;
+    }
+}

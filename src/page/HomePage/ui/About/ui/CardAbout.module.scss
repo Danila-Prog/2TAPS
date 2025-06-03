@@ -1,0 +1,99 @@
+.cardAbout {
+    width: 100%;
+    max-width: 784px;
+    border-radius: 40px;
+    padding: 24px;
+    position: relative;
+    backdrop-filter: blur(10px);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid transparent;
+        border-radius: 40px;
+        background: linear-gradient(to right, rgba(129, 54, 235, 1), rgba(247, 111, 237, 1)) border-box;
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        pointer-events: none;
+    }
+
+    h3 {
+        font-family: $font-hikasami;
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font-family: $font-hikasami;
+            font-size: 0.933rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .cardAbout {
+        h3 {
+            font-size: 1.211rem;
+            margin-bottom: 16px;
+        }
+
+        div {
+            p {
+                font-size: 0.737rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cardAbout {
+        width: 48%;
+        padding: 35px;
+        box-shadow: 10px 10px 100px 0 rgba(0, 0, 0, 0.25);
+
+        h3 {
+            font-size: 1.524rem;
+            margin-bottom: 32px;
+        }
+
+        div {
+            p {
+                max-width: 450px;
+                font-family: $font-hikasami;
+                font-size: 20px;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .cardAbout {
+        width: 49%;
+        padding: 64px;
+
+        h3 {
+            font-size: 2.286rem;
+            margin-bottom: 48px;
+        }
+
+        div {
+            p {
+                width: 308px;
+            }
+        }
+
+    }
+}

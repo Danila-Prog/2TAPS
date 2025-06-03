@@ -1,0 +1,172 @@
+.button {
+    font-family: $font-hikasami;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+
+.buttonMD {
+    width: 307px;
+    height: 66px;
+    border-radius: 999999px;
+}
+
+.buttonLG {
+    width: 49%;
+    height: 103px;
+    border-radius: 40px;
+}
+
+.buttonXL {
+    width: 100%;
+    height: 83px;
+    border-radius: 99999px;
+}
+
+.primaryOutline {
+    font-size: 24px;
+    color: $primary-white;
+    border: 2px solid $primary-white;
+    background: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        border: 2px solid transparent;
+        background: $accent-gradient;
+        background-clip: padding-box;
+    }
+}
+
+.accentOutline {
+    background:
+        linear-gradient(white, white) padding-box,
+        $accent-gradient border-box;
+    border: 3px solid transparent;
+
+
+    .btnText {
+        background-image: $accent-gradient;
+        background-clip: text;
+        color: transparent;
+        font-family: $font-hikasami;
+        font-size: 32px;
+        font-weight: 500;
+    }
+}
+
+.violet {
+    background: $button-violet-light;
+    font-family: $font-hikasami;
+    font-size: 32px;
+    font-weight: 500;
+    color: $primary-white;
+    border: none;
+}
+
+
+@media screen and (min-width: 402px) {
+    .buttonSM {
+        width: 36.816vw;
+        height: 11.194vw;
+        max-height: 66px;
+        border-radius: 999999px;
+    }
+
+    .primaryOutline {
+        font-size: 1.067rem;
+        color: $primary-white;
+        border: 1px solid $primary-white;
+        background: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            border: 2px solid transparent;
+            background: $accent-gradient;
+            background-clip: padding-box;
+        }
+    }
+
+    .buttonXL {
+        width: 100%;
+        height: 11.194vw;
+        max-height: 83px;
+    }
+
+    .white {
+        background: $primary-white;
+        border-radius: 99999px;
+        border: none;
+        font-size: 0.933rem;
+        font-weight: 500;
+        font-family: $font-hikasami;
+    }
+
+    .accentOutline {
+        background:
+            linear-gradient(white, white) padding-box,
+            $accent-gradient border-box;
+        border: 2px solid transparent;
+
+
+        .btnText {
+            background-image: $accent-gradient;
+            background-clip: text;
+            color: transparent;
+            font-family: $font-hikasami;
+            font-size: 1.067rem;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .accentOutline {
+        .btnText {
+            font-size: 1.263rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .buttonSM {
+        width: 36.816vw;
+        height: 66px;
+    }
+
+    .accentOutline {
+        .btnText {
+            font-size: 1.263rem;
+        }
+    }
+
+    .white {
+        font-size: 1.524rem;
+    }
+
+    .buttonXL {
+        height: 10vw;
+        max-height: 83px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .buttonMD {
+        width: 20.605vw;
+        height: 4.395vw;
+        max-width: 230px;
+        max-height: 66px;
+        border-radius: 999999px;
+    }
+
+    .accentOutline {
+        .btnText {
+            font-size: 1.524rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .buttonMD {
+        max-width: 307px;
+    }
+}

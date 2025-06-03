@@ -1,0 +1,82 @@
+// .tariffPlan {
+//     h2 {
+//         height: 100%;
+//         position: relative;
+//         z-index: 0;
+//         font-size: 160px;
+//         text-align: center;
+//         font-family: $font-liter;
+//         font-weight: 400;
+//         line-height: 100px;
+//     }
+// }
+
+// .groupTariffCard {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+@media screen and (min-width: 402px) {
+    .tariffPlan {
+        h2 {
+            position: relative;
+            z-index: 0;
+            font-size: 2.133rem;
+            text-align: center;
+            font-family: $font-liter;
+            font-weight: 400;
+            line-height: 1;
+            margin-bottom: 28px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tariffPlan {
+        h2 {
+            font-size: 3.368rem;
+        }
+    }
+
+    .groupTariffCard {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .tariffPlan {
+        h2 {
+            font-size: 100px;
+            line-height: 65px;
+            margin-bottom: 0;
+        }
+    }
+
+    .groupTariffCard {
+        gap: 3.906vw;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .tariffPlan {
+        h2 {
+            font-size: 7.143rem;
+            line-height: 90px;
+        }
+    }
+
+    .groupTariffCard {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1540px) {
+    .tariffPlan {
+        h2 {
+            font-size: 7.619rem;
+            line-height: 100px;
+        }
+    }
+}

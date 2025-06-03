@@ -1,0 +1,161 @@
+.reviewAbout {
+    h2 {
+        font-size: 2.133rem;
+        font-family: $font-hikasami;
+        font-weight: 400;
+        margin-bottom: 32px;
+    }
+
+    .containerInfoReviewAbout {
+        background: $primary-violet;
+        border-radius: 20px;
+        padding: 32px 20px;
+
+        .infoReviewAbout {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            h3 {
+                font-family: $font-liter;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $primary-white;
+            }
+        }
+
+        .containerSwitch {
+            display: flex;
+            gap: 16px;
+            align-items: flex-end;
+
+            button {
+                width: 48px;
+                height: 48px;
+                display: flex;
+                cursor: pointer;
+                border-radius: 99999px;
+                background:
+                    linear-gradient(white, white) padding-box,
+                    $accent-gradient border-box;
+                border: 1px solid transparent;
+
+                img {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .containerReviewAboutCard {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .reviewAbout {
+        .containerInfoReviewAbout {
+            padding: 35px 40px;
+
+            .infoReviewAbout {
+                h3 {
+                    width: 100%;
+                    max-width: 625px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .reviewAbout {
+        h2 {
+            font-size: 3.333rem;
+            margin-bottom: 74px;
+        }
+
+        .containerInfoReviewAbout {
+            border-radius: 40px;
+            padding: 56px;
+
+            .infoReviewAbout {
+                margin-bottom: 60px;
+
+                h3 {
+                    font-size: 48px;
+                    width: 80%;
+                    max-width: 100%;
+                    line-height: 56px;
+                }
+            }
+
+            //     .containerSwitch {
+            //         display: flex;
+            //         gap: 16px;
+            //         align-items: flex-end;
+
+            //         button {
+            //             width: 48px;
+            //             height: 48px;
+            //             display: flex;
+            //             cursor: pointer;
+            //             border-radius: 99999px;
+            //             background:
+            //                 linear-gradient(white, white) padding-box,
+            //                 $accent-gradient border-box;
+            //             border: 1px solid transparent;
+
+            //             img {
+            //                 margin: auto;
+            //             }
+            //         }
+            //     }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .reviewAbout {
+        h2 {
+            font-size: 4.571rem;
+            margin-bottom: 84px;
+        }
+
+        .containerInfoReviewAbout {
+            padding: 56px;
+
+            .infoReviewAbout {
+                margin-bottom: 100px;
+
+                h3 {
+                    font-size: 2.286rem;
+                    max-width: 800px;
+                }
+            }
+
+            // .containerSwitch {
+            //     display: flex;
+            //     gap: 16px;
+            //     align-items: flex-end;
+
+            //     button {
+            //         width: 48px;
+            //         height: 48px;
+            //         display: flex;
+            //         cursor: pointer;
+            //         border-radius: 99999px;
+            //         background:
+            //             linear-gradient(white, white) padding-box,
+            //             $accent-gradient border-box;
+            //         border: 1px solid transparent;
+
+            //         img {
+            //             margin: auto;
+            //         }
+            //     }
+            // }
+        }
+    }
+}

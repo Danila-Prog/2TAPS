@@ -1,0 +1,76 @@
+.whatWeCanDo {
+    width: 95%;
+    margin-left: auto;
+    background: $primary-violet;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 50px 5vw;
+    position: relative;
+    z-index: -2;
+
+    h2 {
+        text-align: right;
+        font-family: $font-hikasami;
+        font-size: 2.133rem;
+        font-weight: 400;
+        color: $primary-white;
+        margin-bottom: 48px;
+        line-height: 1;
+    }
+
+    .groupInfoCard {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .whatWeCanDo {
+        width: 85%;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 50px 4vw;
+
+        h2 {
+            margin-bottom: 70px;
+        }
+
+        .groupInfoCard {
+            gap: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .whatWeCanDo {
+        width: 93%;
+        padding: 60px 4.883vw;
+        border-radius: 40px;
+
+        h2 {
+            font-size: 3.095rem;
+            margin-bottom: 70px;
+        }
+
+        .groupInfoCard {
+            gap: 64px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .whatWeCanDo {
+        padding: 100px;
+
+        h2 {
+            font-size: 4.571rem;
+            margin-bottom: 84px;
+        }
+
+        .groupInfoCard {
+            gap: 64px;
+        }
+    }
+}

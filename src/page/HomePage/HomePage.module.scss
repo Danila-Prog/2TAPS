@@ -1,0 +1,338 @@
+.mainBlock {
+    background: $primary-violet;
+    padding-bottom: 116px;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.infoMainBlock {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.aboutContainer {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .about {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .smallCurve {
+        width: 200px;
+        height: 172px;
+        position: absolute;
+        right: 0;
+        top: -40px;
+        z-index: -1;
+    }
+
+    .containerBigCurve {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+
+        .bigCurve {
+            width: 178.607vw;
+            height: 101.741vw;
+            left: -20%;
+            position: relative;
+            z-index: -1;
+        }
+    }
+
+
+}
+
+.containerTariffPlan {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+
+    .componentTariffPlan {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .containerLight {
+        position: absolute;
+        top: -9.95vw;
+        right: 0;
+        overflow: hidden;
+
+        .light {
+            position: relative;
+            right: -20%;
+            width: 81.841vw;
+            height: 81.841vw;
+            z-index: -1;
+        }
+    }
+
+}
+
+.containerReviewAbout {
+    position: relative;
+    padding-bottom: 100px;
+
+
+    .componentReviewAbout {
+        position: relative;
+        z-index: -2;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .containerGeer {
+        position: absolute;
+        overflow: hidden;
+        top: -42vw;
+        right: 0;
+
+        .geer {
+            width: 66.915vw;
+            height: 66.915vw;
+            position: relative;
+            right: -35%;
+            z-index: -1;
+        }
+    }
+
+}
+
+.containerFooter {
+    position: relative;
+}
+
+@media screen and (min-width: 523px) {
+    .aboutContainer {
+        .containerBigCurve {
+            top: 40%;
+
+            .bigCurve {
+                width: 130vw;
+                height: 80vw;
+                left: -10%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 678px) {
+    .aboutContainer {
+        .containerBigCurve {
+            .bigCurve {
+                width: 120vw;
+                height: 70vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .infoMainBlock {
+        width: 85%;
+    }
+
+    .aboutContainer {
+        .about {
+            width: 85%;
+        }
+
+        .smallCurve {
+            width: 260px;
+            height: 220px;
+        }
+
+        .containerBigCurve {
+            top: 20%;
+
+            .bigCurve {
+                width: 110vw;
+            }
+        }
+    }
+
+    .containerTariffPlan {
+        .componentTariffPlan {
+            width: 85%;
+        }
+
+        .containerLight {
+            top: -5.208vw;
+
+            .light {
+                right: -10%;
+                width: 81.841vw;
+                height: 81.841vw;
+            }
+        }
+    }
+
+    .containerReviewAbout {
+        .componentReviewAbout {
+            width: 85%;
+        }
+
+        .containerGeer {
+            top: -30vw;
+
+            .geer {
+                width: 52.083vw;
+                height: 52.083vw;
+                right: -30%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 866px) {
+    .aboutContainer {
+        .containerBigCurve {
+            top: 0%;
+
+            .bigCurve {
+                width: 110vw;
+                height: 70vw;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 953px) {
+    .aboutContainer {
+        .containerBigCurve {
+
+            .bigCurve {
+                width: 120vw;
+                height: 62vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .infoMainBlock {
+        width: 93%;
+    }
+
+    .aboutContainer {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        .about {
+            width: 93%;
+        }
+
+        .smallCurve {
+            width: 400px;
+            height: 350px;
+        }
+
+        .containerBigCurve {
+            top: 40%;
+        }
+    }
+
+    .containerTariffPlan {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        .componentTariffPlan {
+            width: 93%;
+        }
+
+        .containerLight {
+            top: -7vw;
+
+            .light {
+                right: -10%;
+                width: 81.841vw;
+                height: 81.841vw;
+                max-width: 1210px;
+                max-height: 1210px;
+            }
+        }
+    }
+
+    .containerReviewAbout {
+        padding-bottom: 200px;
+
+        .componentReviewAbout {
+            width: 93%;
+        }
+
+        .containerGeer {
+            top: -30vw;
+
+            .geer {
+                width: 51.758vw;
+                height: 51.758vw;
+                max-width: 660px;
+                max-height: 660px;
+                right: 0;
+            }
+        }
+    }
+
+    .containerFooter {
+        width: 93%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1206px) {
+    .aboutContainer {
+        .containerBigCurve {
+            top: 30%;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1239px) {
+    .aboutContainer {
+        .containerBigCurve {
+            top: 27%;
+
+            .bigCurve {
+                width: 100vw;
+                height: 70vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .aboutContainer {
+        .smallCurve {
+            width: 580px;
+            height: 480px;
+        }
+    }
+
+    .containerTariffPlan {
+        .containerLight {
+            .containerLight {
+                top: -130px;
+            }
+        }
+    }
+
+    .containerReviewAbout {
+        .containerGeer {
+            top: -330px;
+            right: 5%;
+
+            .geer {
+                right: 0;
+            }
+        }
+    }
+}

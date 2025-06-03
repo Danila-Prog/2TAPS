@@ -1,0 +1,183 @@
+.tariffCard {
+    max-width: 502px;
+    border-radius: 40px;
+    text-align: center;
+    padding: 32px 7.5%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid transparent;
+        border-radius: 40px;
+        background: linear-gradient(to right, rgba(129, 54, 235, 1), rgba(247, 111, 237, 1)) border-box;
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        pointer-events: none;
+    }
+
+    .containerName {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 140px;
+
+        h3 {
+            background-image: $accent-gradient;
+            background-clip: text;
+            color: transparent;
+            font-family: $font-hikasami;
+            font-size: 3.2rem;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        .underName {
+            background-image: $accent-gradient;
+            background-clip: text;
+            color: transparent;
+            font-size: 32px;
+            font-weight: 500;
+            font-family: $font-hikasami;
+            margin-top: -8px;
+        }
+    }
+
+    .titleListWork {
+        display: block;
+        font-family: $font-hikasami;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 24px;
+        line-height: 1;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 32px;
+        padding-left: 0;
+        list-style: none;
+
+        li {
+            text-align: start;
+            font-family: $font-hikasami;
+            font-size: 0.933rem;
+            position: relative;
+            display: flex;
+            padding-left: 13px;
+
+            &::before {
+                content: "•";
+                font-size: 0.933rem;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+
+    .footerTariffCard {
+        padding-right: 6%;
+        padding-left: 6%;
+
+        .priceTariff {
+            display: block;
+            font-family: $font-liter;
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+    .tariffCard {
+        ul {
+            li {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 645px) {
+    .tariffCard {
+        .footerTariffCard {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tariffCard {
+        padding: 32px 35px;
+
+        .footerTariffCard {
+            .priceTariff {
+                font-size: 2.526rem;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .tariffCard {
+        width: 49%;
+        padding: 55px 40px;
+
+        .containerName {
+            height: 90px;
+
+            h3 {
+                font-size: 64px;
+                font-weight: 600;
+            }
+        }
+
+        .titleListWork {
+            font-weight: 500;
+        }
+
+        ul {
+            gap: 24px;
+            margin-bottom: 64px;
+
+            li {
+                padding-left: 20px;
+            }
+        }
+
+        .priceTariff {
+            margin-bottom: 32px;
+            line-height: 56px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .tariffCard {
+        padding: 64px 51px;
+
+        .containerName {
+            margin-bottom: 48px;
+            height: 110px;
+        }
+
+        .titleListWork {
+            font-size: 1.524rem;
+        }
+
+        .priceTariff {
+            font-size: 2.286rem;
+        }
+    }
+}

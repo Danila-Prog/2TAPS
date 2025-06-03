@@ -1,0 +1,26 @@
+<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M110 50.768C110 27.776 110 16.286 102.968 9.14C95.936 1.994 84.626 2 62 2H50C27.374 2 16.058 2 9.032 9.14C2.006 16.28 2 27.776 2 50.768C2 73.76 2 85.25 9.032 92.396C11.852 95.258 15.356 96.974 20 98M89 86L94.52 90.758C96.842 92.756 98 93.758 98 95C98 96.242 96.842 97.244 94.52 99.242L89 104M71 86L65.48 90.758C63.158 92.756 62 93.758 62 95C62 96.242 63.158 97.244 65.48 99.242L71 104M5 26H107M122 95C122 83.75 122 78.128 119.138 74.18C118.213 72.9068 117.093 71.7871 115.82 70.862C111.872 68 106.25 68 95 68H65C53.75 68 48.128 68 44.18 70.862C42.9068 71.7871 41.7871 72.9068 40.862 74.18C38 78.134 38 83.756 38 95C38 106.244 38 111.872 40.862 115.82C41.7889 117.094 42.9107 118.213 44.186 119.138C48.128 122 53.75 122 65 122H95C106.25 122 111.872 122 115.82 119.138C117.093 118.213 118.213 117.093 119.138 115.82C122 111.872 122 106.25 122 95Z" stroke="url(#paint0_linear_276_574)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="mask0_276_574" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="124" height="124">
+<path d="M110 50.768C110 27.776 110 16.286 102.968 9.14C95.936 1.994 84.626 2 62 2H50C27.374 2 16.058 2 9.032 9.14C2.006 16.28 2 27.776 2 50.768C2 73.76 2 85.25 9.032 92.396C11.852 95.258 15.356 96.974 20 98M89 86L94.52 90.758C96.842 92.756 98 93.758 98 95C98 96.242 96.842 97.244 94.52 99.242L89 104M71 86L65.48 90.758C63.158 92.756 62 93.758 62 95C62 96.242 63.158 97.244 65.48 99.242L71 104M5 26H107M122 95C122 83.75 122 78.128 119.138 74.18C118.213 72.9068 117.093 71.7871 115.82 70.862C111.872 68 106.25 68 95 68H65C53.75 68 48.128 68 44.18 70.862C42.9068 71.7871 41.7871 72.9068 40.862 74.18C38 78.134 38 83.756 38 95C38 106.244 38 111.872 40.862 115.82C41.7889 117.094 42.9107 118.213 44.186 119.138C48.128 122 53.75 122 65 122H95C106.25 122 111.872 122 115.82 119.138C117.093 118.213 118.213 117.093 119.138 115.82C122 111.872 122 106.25 122 95Z" stroke="url(#paint1_linear_276_574)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0_276_574)">
+<g filter="url(#filter0_f_276_574)">
+<rect x="-64.8228" y="12.3361" width="270" height="120.301" transform="rotate(20 -64.8228 12.3361)" fill="#280E4A"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_276_574" x="-155.968" y="-37.6639" width="394.862" height="305.391" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_276_574"/>
+</filter>
+<linearGradient id="paint0_linear_276_574" x1="-34.5625" y1="30.125" x2="159.5" y2="103.25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8136EB"/>
+<stop offset="1" stop-color="#F76FED"/>
+</linearGradient>
+<linearGradient id="paint1_linear_276_574" x1="-34.5625" y1="30.125" x2="159.5" y2="103.25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8136EB"/>
+<stop offset="1" stop-color="#F76FED"/>
+</linearGradient>
+</defs>
+</svg>

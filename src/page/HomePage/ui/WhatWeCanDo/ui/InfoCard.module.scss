@@ -1,0 +1,111 @@
+.infoCard {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 32px;
+
+    span {
+        display: block;
+        margin-right: 8px;
+        font-size: 1.6rem;
+        font-family: $font-hikasami;
+        font-weight: 600;
+        color: $primary-white;
+    }
+
+    div {
+        h3 {
+            font-size: 1.6rem;
+            font-family: $font-hikasami;
+            font-weight: 600;
+            margin-bottom: 24px;
+            background-image: $accent-gradient;
+            background-clip: text;
+            color: transparent;
+
+        }
+
+        p {
+            font-family: $font-hikasami;
+            font-size: 0.933rem;
+            color: $primary-white;
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .infoCard {
+        padding-top: 0px;
+
+        div {
+            h3 {
+                font-size: 1.6rem;
+                margin-bottom: 14px;
+            }
+
+            p {
+                width: 90%;
+                font-family: $font-hikasami;
+                font-size: 0.737rem;
+                color: $primary-white;
+            }
+        }
+
+        img {
+            position: static;
+            margin: auto 0;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .infoCard {
+        span {
+            font-size: 2.571rem;
+            margin-right: 15px;
+        }
+
+        div {
+            width: 784px;
+
+            h3 {
+                font-size: 2.571rem;
+            }
+
+            p {
+                font-size: 0.905rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .infoCard {
+        span {
+            font-size: 3.048rem;
+        }
+
+        div {
+
+            h3 {
+                font-size: 3.048rem;
+                margin-bottom: 40px;
+            }
+
+            p {
+                font-size: 0.952rem;
+            }
+        }
+    }
+}

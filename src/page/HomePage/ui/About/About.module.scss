@@ -1,0 +1,87 @@
+.about {
+    h2 {
+        width: 60%;
+        font-size: 2.133rem;
+        font-family: $font-hikasami;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    .aboutDescription {
+        display: flex;
+        justify-content: end;
+
+        p {
+            font-size: 400;
+            font-size: 1.067rem;
+            font-family: $font-hikasami;
+            margin-bottom: 24px;
+        }
+    }
+
+    .cardsBlock {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        h2 {
+            width: 70%;
+            font-size: 2.133rem;
+        }
+
+        .aboutDescription {
+            p {
+                font-size: 1.053rem;
+                margin-bottom: 32px;
+            }
+        }
+
+        .cardsBlock {
+            flex-direction: row;
+            gap: 2.344vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        h2 {
+            font-size: 3.333rem;
+        }
+
+        .aboutDescription {
+            p {
+                max-width: 600px;
+                font-size: 1.143rem;
+                margin-bottom: 52px;
+            }
+        }
+
+        .cardsBlock {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about {
+        h2 {
+            font-size: 4.571rem;
+            margin-bottom: 84px;
+        }
+
+        .aboutDescription {
+            p {
+                max-width: 784px;
+                font-size: 1.524rem;
+                margin-bottom: 52px;
+            }
+        }
+    }
+}

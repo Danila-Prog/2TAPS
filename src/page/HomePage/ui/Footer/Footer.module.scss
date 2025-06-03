@@ -1,0 +1,215 @@
+.footer {
+    background: $primary-violet;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 40px 34px 0px 40px;
+    position: relative;
+
+    header {
+        color: $primary-white;
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .headerInfo {
+            h3 {
+                font-size: 2.133rem;
+                font-weight: 400;
+                font-family: $font-hikasami;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 1.067rem;
+                font-weight: 400;
+                font-family: $font-hikasami;
+            }
+        }
+    }
+
+    main {
+        color: $primary-white;
+        margin-bottom: 32px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 38px;
+            gap: 8px;
+
+            span {
+                display: block;
+                font-size: 0.933rem;
+                font-weight: 400;
+                font-family: $font-hikasami;
+            }
+        }
+
+        .numberPhone {
+            font-size: 1.6rem;
+            font-weight: 600;
+            font-family: $font-hikasami;
+        }
+    }
+
+    nav {
+        margin-bottom: 41px;
+
+        h4 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            font-family: $font-liter;
+            color: $primary-white;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            display: flex;
+            gap: 16px;
+
+            li {
+                list-style-type: none;
+
+                img {
+                    width: 9.95vw;
+                    height: 9.95vw;
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+
+            }
+        }
+    }
+
+    .footerSvg {
+        width: 89.801vw;
+        height: 57.96vw;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 37px 55px;
+        padding-bottom: 37px;
+        overflow: hidden;
+
+        header {
+            img {
+                width: 21.891vw;
+                height: 11.94vw;
+                max-width: 184px;
+                max-height: 101px;
+            }
+        }
+
+        main {
+            div {
+                gap: 12px;
+
+                span {
+                    font-size: 0.789rem;
+                }
+            }
+
+            .numberPhone {
+                font-size: 1.263rem;
+            }
+        }
+
+        nav {
+            h4 {
+                margin-bottom: 16px;
+            }
+
+            ul {
+                gap: 24px;
+
+                li {
+                    img {
+                        width: 5.859vw;
+                        height: 5.859vw;
+                        max-width: 70px;
+                        max-height: 70px;
+                    }
+                }
+            }
+        }
+
+        .footerSvg {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            right: -40px;
+            width: 58.594vw;
+            height: 45.573vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+
+        .footerSvg {
+            width: 43.945vw;
+            height: 34.18vw;
+            max-width: 590px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        padding: 80px;
+
+        header {
+            margin-bottom: 100px;
+
+            .headerInfo {
+                h3 {
+                    font-size: 4.571rem;
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    font-size: 1.524rem;
+                }
+            }
+        }
+
+        main {
+            margin-bottom: 64px;
+
+            div {
+                gap: 24px;
+
+                span {
+                    font-size: 0.952rem;
+                }
+            }
+
+            .numberPhone {
+                font-size: 1.524rem;
+            }
+        }
+
+        nav {
+            h4 {
+                font-size: 2.286rem;
+                height: 48px;
+                margin-bottom: 64px;
+            }
+        }
+
+        .footerSvg {
+            width: 51.389vw;
+            height: 50.694vw;
+            max-width: 945px;
+            max-height: 934px;
+        }
+    }
+}

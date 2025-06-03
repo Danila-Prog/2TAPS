@@ -1,0 +1,8 @@
+export { About } from "./About/About";
+export { ApplicationForm } from "./ApplicationForm/ApplicationForm";
+export { Footer } from "./Footer/Footer";
+export { Header } from "./Header/Header";
+export { Main } from "./Main/Main";
+export { ReviewAbout } from "./ReviewsAbout/ReviewsAbout";
+export { TariffPlan } from "./TariffPlan/TariffPlan";
+export { WhatWeCanDo } from "./WhatWeCanDo/WhatWeCanDo";
