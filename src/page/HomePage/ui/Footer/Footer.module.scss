@@ -26,6 +26,10 @@
                 font-family: $font-hikasami;
             }
         }
+
+        .footerLogo {
+            display: none;
+        }
     }
 
     main {
@@ -83,9 +87,15 @@
         }
     }
 
-    .footerSvg {
+    .footerSvgMobile {
         width: 89.801vw;
         height: 57.96vw;
+        pointer-events: none;
+    }
+
+    .footerSvgTablet {
+        display: none;
+        pointer-events: none;
     }
 }
 
@@ -97,11 +107,8 @@
         overflow: hidden;
 
         header {
-            img {
-                width: 21.891vw;
-                height: 11.94vw;
-                max-width: 184px;
-                max-height: 101px;
+            .footerLogo {
+                display: block;
             }
         }
 
@@ -138,7 +145,11 @@
             }
         }
 
-        .footerSvg {
+        .footerSvgMobile {
+            display: none;
+        }
+
+        .footerSvgTablet {
             position: absolute;
             display: block;
             bottom: 0;
@@ -154,7 +165,7 @@
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
 
-        .footerSvg {
+        .footerSvgTablet {
             width: 43.945vw;
             height: 34.18vw;
             max-width: 590px;
@@ -205,7 +216,7 @@
             }
         }
 
-        .footerSvg {
+        .footerSvgTablet {
             width: 51.389vw;
             height: 50.694vw;
             max-width: 945px;

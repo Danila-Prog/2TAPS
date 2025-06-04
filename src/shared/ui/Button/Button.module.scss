@@ -98,13 +98,10 @@
         border: none;
         font-size: 0.933rem;
         font-weight: 500;
-        font-family: $font-hikasami;
+        color: black;
     }
 
     .accentOutline {
-        background:
-            linear-gradient(white, white) padding-box,
-            $accent-gradient border-box;
         border: 2px solid transparent;
 
 
@@ -112,7 +109,6 @@
             background-image: $accent-gradient;
             background-clip: text;
             color: transparent;
-            font-family: $font-hikasami;
             font-size: 1.067rem;
             font-weight: 400;
         }

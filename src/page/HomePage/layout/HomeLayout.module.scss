@@ -1,3 +1,8 @@
+.containerLayout {
+    max-width: 1728px;
+    margin: 0 auto;
+}
+
 .mainBlock {
     background: $primary-violet;
     padding-bottom: 116px;
@@ -27,6 +32,7 @@
         right: 0;
         top: -40px;
         z-index: -1;
+        pointer-events: none;
     }
 
     .containerBigCurve {
@@ -35,6 +41,7 @@
         left: 0;
         right: 0;
         overflow: hidden;
+        pointer-events: none;
 
         .bigCurve {
             width: 178.607vw;
@@ -44,8 +51,6 @@
             z-index: -1;
         }
     }
-
-
 }
 
 .containerTariffPlan {
@@ -63,6 +68,7 @@
         top: -9.95vw;
         right: 0;
         overflow: hidden;
+        pointer-events: none;
 
         .light {
             position: relative;
@@ -70,6 +76,8 @@
             width: 81.841vw;
             height: 81.841vw;
             z-index: -1;
+            pointer-events: none;
+
         }
     }
 
@@ -88,13 +96,14 @@
     }
 
 
-    .containerGeer {
+    .containerGear {
         position: absolute;
         overflow: hidden;
         top: -42vw;
         right: 0;
+        pointer-events: none;
 
-        .geer {
+        .gear {
             width: 66.915vw;
             height: 66.915vw;
             position: relative;
@@ -105,9 +114,6 @@
 
 }
 
-.containerFooter {
-    position: relative;
-}
 
 @media screen and (min-width: 523px) {
     .aboutContainer {
@@ -179,10 +185,10 @@
             width: 85%;
         }
 
-        .containerGeer {
+        .containerGear {
             top: -30vw;
 
-            .geer {
+            .gear {
                 width: 52.083vw;
                 height: 52.083vw;
                 right: -30%;
@@ -268,10 +274,10 @@
             width: 93%;
         }
 
-        .containerGeer {
+        .containerGear {
             top: -30vw;
 
-            .geer {
+            .gear {
                 width: 51.758vw;
                 height: 51.758vw;
                 max-width: 660px;
@@ -299,10 +305,10 @@
 @media screen and (min-width: 1239px) {
     .aboutContainer {
         .containerBigCurve {
-            top: 27%;
+            top: 8%;
 
             .bigCurve {
-                width: 100vw;
+                width: 110vw;
                 height: 70vw;
             }
         }
@@ -315,6 +321,15 @@
             width: 580px;
             height: 480px;
         }
+
+        .containerBigCurve {
+            top: 356px;
+
+            .bigCurve {
+                max-width: 1913px;
+                max-height: 1081px;
+            }
+        }
     }
 
     .containerTariffPlan {
@@ -326,11 +341,11 @@
     }
 
     .containerReviewAbout {
-        .containerGeer {
+        .containerGear {
             top: -330px;
             right: 5%;
 
-            .geer {
+            .Gear {
                 right: 0;
             }
         }

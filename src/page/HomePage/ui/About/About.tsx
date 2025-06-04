@@ -1,5 +1,6 @@
 import { CardAbout } from "./ui/CardAbout";
 import styles from "./About.module.scss";
+import { CARD_ABOUT } from "./lib/consts";
 
 export const About = () => {
   return (
@@ -15,14 +16,9 @@ export const About = () => {
       </div>
 
       <div className={styles.cardsBlock}>
-        <CardAbout
-          title="6.750.000 ₽ ЗАРАБОТАЛИ НАШИ КЛИЕНТЫ С 2020 ГОДА"
-          description="благодаря адаптивным сайтам с SEO-оптимизацией, готовым воронкам продаж и точной сквозной аналитике."
-        />
-        <CardAbout
-          title="ЗА 3 ГОДА МЫ РЕАЛИЗОВАЛИ БОЛЕЕ 150 ПРОЕКТОВ"
-          description="От лендингов до сложных веб-платформ — мы знаем, как сделать ваш бизнес заметным в digital."
-        />
+        {CARD_ABOUT.map((card, index) => (
+          <CardAbout key={index} {...card} />
+        ))}
       </div>
     </section>
   );

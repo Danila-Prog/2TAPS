@@ -31,7 +31,7 @@ const LIST_WORK_ARRAY = [
   },
 ];
 
-export const TARRIF_CARD_INFO = [
+export const TARIFF_CARD_INFO = [
   {
     name: "VIP",
     listWork: [

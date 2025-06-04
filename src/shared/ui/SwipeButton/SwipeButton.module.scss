@@ -1,0 +1,17 @@
+.swipeButton {
+    width: 10.945vw;
+    height: 10.945vw;
+    max-width: 48px;
+    max-height: 48px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 99999px;
+    background:
+        linear-gradient(white, white) padding-box,
+        $accent-gradient border-box;
+    border: 1px solid transparent;
+
+    img {
+        margin: auto;
+    }
+}

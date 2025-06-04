@@ -23,33 +23,22 @@
                 color: $primary-white;
             }
         }
-
-        .containerSwitch {
-            display: flex;
-            gap: 16px;
-            align-items: flex-end;
-
-            button {
-                width: 48px;
-                height: 48px;
-                display: flex;
-                cursor: pointer;
-                border-radius: 99999px;
-                background:
-                    linear-gradient(white, white) padding-box,
-                    $accent-gradient border-box;
-                border: 1px solid transparent;
-
-                img {
-                    margin: auto;
-                }
-            }
-        }
     }
 
     .containerReviewAboutCard {
         display: flex;
         justify-content: space-between;
+    }
+
+    .containerSwitchTablet {
+        display: none;
+    }
+
+    .containerSwitchMobile {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 24px;
     }
 }
 
@@ -90,28 +79,16 @@
                     line-height: 56px;
                 }
             }
+        }
 
-            //     .containerSwitch {
-            //         display: flex;
-            //         gap: 16px;
-            //         align-items: flex-end;
+        .containerSwitchMobile {
+            display: none;
+        }
 
-            //         button {
-            //             width: 48px;
-            //             height: 48px;
-            //             display: flex;
-            //             cursor: pointer;
-            //             border-radius: 99999px;
-            //             background:
-            //                 linear-gradient(white, white) padding-box,
-            //                 $accent-gradient border-box;
-            //             border: 1px solid transparent;
-
-            //             img {
-            //                 margin: auto;
-            //             }
-            //         }
-            //     }
+        .containerSwitchTablet {
+            display: flex;
+            gap: 16px;
+            align-items: flex-end;
         }
     }
 }
@@ -134,28 +111,6 @@
                     max-width: 800px;
                 }
             }
-
-            // .containerSwitch {
-            //     display: flex;
-            //     gap: 16px;
-            //     align-items: flex-end;
-
-            //     button {
-            //         width: 48px;
-            //         height: 48px;
-            //         display: flex;
-            //         cursor: pointer;
-            //         border-radius: 99999px;
-            //         background:
-            //             linear-gradient(white, white) padding-box,
-            //             $accent-gradient border-box;
-            //         border: 1px solid transparent;
-
-            //         img {
-            //             margin: auto;
-            //         }
-            //     }
-            // }
         }
     }
 }

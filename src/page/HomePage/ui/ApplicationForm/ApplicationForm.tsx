@@ -28,8 +28,8 @@ export const ApplicationForm = () => {
             </div>
 
             <div>
-              <input type="radio" id="talegram-radio" />
-              <label htmlFor="talegram-radio">Telegram</label>
+              <input type="radio" id="telegram-radio" />
+              <label htmlFor="telegram-radio">Telegram</label>
             </div>
 
             <div>

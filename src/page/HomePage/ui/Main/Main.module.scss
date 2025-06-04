@@ -17,6 +17,7 @@
         height: 100%;
         aspect-ratio: auto / auto;
         margin-bottom: 32px;
+        pointer-events: none;
     }
 
     p {
@@ -24,6 +25,10 @@
         color: $primary-white;
         font-family: $font-hikasami;
         margin-bottom: 64px;
+
+        .descriptionTextAdaptiveLaptop {
+            display: none;
+        }
     }
 
     .buttonMain {
@@ -31,6 +36,21 @@
     }
 }
 
+
+
+@media screen and (min-width:768px) {
+    .main {
+        p {
+            .descriptionTextAdaptiveMobile {
+                display: none;
+            }
+
+            .descriptionTextAdaptiveLaptop {
+                display: inline;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .main {

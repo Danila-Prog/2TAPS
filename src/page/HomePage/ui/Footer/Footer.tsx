@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.scss";
@@ -7,13 +5,11 @@ import telegram from "/public/icons/telegram.png";
 import whatsapp from "/public/icons/whatsapp.png";
 import vk from "/public/icons/vk.png";
 import phone from "/public/icons/phone.png";
-import logo from "/public/icons/logo.png";
-import { useWindowSize } from "@/shared/model/useWindowSize";
-import footer_svg from "/public/svg/footer_svg.svg";
+import footer_svg_mobile from "/public/svg/footer_svg_mobile.svg";
 import footer_svg_tablet from "/public/svg/footer_svg_tablet.svg";
+import { Logo } from "@/shared";
 
 export const Footer = () => {
-  const width = useWindowSize();
   return (
     <footer className={styles.footer}>
       <header>
@@ -21,7 +17,7 @@ export const Footer = () => {
           <h3>Остались вопросы?</h3>
           <p>Заполни форму выше, и мы на всё ответим</p>
         </div>
-        {width > 768 && <Image src={logo} alt="" />}
+        <Logo additionalStyle={styles.footerLogo} />
       </header>
 
       <main>
@@ -59,10 +55,17 @@ export const Footer = () => {
           </li>
         </ul>
       </nav>
+
       <Image
-        src={width < 768 ? footer_svg : footer_svg_tablet}
-        alt=""
-        className={styles.footerSvg}
+        src={footer_svg_mobile}
+        alt="footer svg mobile"
+        className={styles.footerSvgMobile}
+      />
+
+      <Image
+        src={footer_svg_tablet}
+        alt="footer svg tablet"
+        className={styles.footerSvgTablet}
       />
     </footer>
   );

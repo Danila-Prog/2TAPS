@@ -1,9 +1,7 @@
 import { ReviewAboutCard } from "./ui/ReviewAboutCard";
 import styles from "./ReviewsAbout.module.scss";
-// import arrow_left from "/public/svg/arrow_left.svg";
-// import arrow_right from "/public/svg/arrow_right.svg";
-// import Image from "next/image";
 import { REVIEW_ABOUT_ARRAY } from "./lib/consts";
+import { SwipeButton } from "@/shared";
 
 export const ReviewAbout = () => {
   return (
@@ -13,14 +11,10 @@ export const ReviewAbout = () => {
       <div className={styles.containerInfoReviewAbout}>
         <div className={styles.infoReviewAbout}>
           <h3>Мы попросили наших клиентов написать пару слов о нас</h3>
-          {/* <div className={styles.containerSwitch}>
-            <button>
-              <Image src={arrow_left} alt="arrow left" />
-            </button>
-            <button>
-              <Image src={arrow_right} alt="arrow right" />
-            </button>
-          </div> */}
+          <div className={styles.containerSwitchTablet}>
+            <SwipeButton directionSwipe="left" />
+            <SwipeButton directionSwipe="right" />
+          </div>
         </div>
 
         <div className={styles.containerReviewAboutCard}>
@@ -32,6 +26,11 @@ export const ReviewAbout = () => {
               description={review.description}
             />
           ))}
+        </div>
+
+        <div className={styles.containerSwitchMobile}>
+          <SwipeButton directionSwipe="left" />
+          <SwipeButton directionSwipe="right" />
         </div>
       </div>
     </section>
