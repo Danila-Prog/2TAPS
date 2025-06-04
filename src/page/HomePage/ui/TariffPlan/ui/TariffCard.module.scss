@@ -5,6 +5,8 @@
     padding: 32px 7.5%;
     background: transparent;
     backdrop-filter: blur(10px);
+    display: inline-block;
+    width: 95% !important;
 
     &::before {
         content: '';
@@ -45,7 +47,7 @@
             font-size: 32px;
             font-weight: 500;
             font-family: $font-hikasami;
-            margin-top: -8px;
+            margin-top: 5px;
         }
     }
 
@@ -131,11 +133,9 @@
 
 @media screen and (min-width: 1024px) {
     .tariffCard {
-        width: 49%;
         padding: 55px 40px;
 
         .containerName {
-            height: 90px;
 
             h3 {
                 font-size: 64px;

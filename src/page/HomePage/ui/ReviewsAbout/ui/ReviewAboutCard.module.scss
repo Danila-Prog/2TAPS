@@ -2,6 +2,9 @@
     padding: 24px;
     background: $primary-white;
     border-radius: 20px;
+    display: inline-block;
+    text-align: left;
+    width: 95% !important;
 
     .headerReviewAboutCard {
         display: flex;
@@ -54,10 +57,9 @@
 @media screen and (min-width: 1024px) {
     .reviewAboutCard {
         padding: 32px;
-        width: 48%;
+        width: 95% !important;
 
         .headerReviewAboutCard {
-
             h4 {
                 &:first-child {
                     margin-bottom: 10px;
@@ -74,6 +76,6 @@
 @media screen and (min-width: 1440px) {
     .reviewAboutCard {
         padding: 32px;
-        width: 32%;
+        width: 93% !important;
     }
 }

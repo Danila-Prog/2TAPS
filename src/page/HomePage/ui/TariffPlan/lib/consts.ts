@@ -46,28 +46,46 @@ export const TARIFF_CARD_INFO = [
     ],
     price: "29.990",
   },
-  // {
-  //   name: "Platinum",
-  //   listWork: [
-  //     ...LIST_WORK_ARRAY.slice(0, LIST_WORK_ARRAY.length - 6).map((item) => {
-  //       return {
-  //         nameWork: item.nameWork,
-  //         lineThought: false,
-  //       };
-  //     }),
-  //     ...LIST_WORK_ARRAY.slice(-6).map((item) => {
-  //       return {
-  //         nameWork: item.nameWork,
-  //         lineThought: true,
-  //       };
-  //     }),
-  //   ],
-  //   price: "39.990",
-  // },
-  // {
-  //   name: "MDM",
-  //   underName: "(Million Dollar Marketing)",
-  //   listWork: LIST_WORK_ARRAY,
-  //   price: "79.990",
-  // },
+  {
+    name: "Platinum",
+    listWork: [
+      ...LIST_WORK_ARRAY.slice(0, LIST_WORK_ARRAY.length - 6).map((item) => {
+        return {
+          nameWork: item.nameWork,
+          lineThought: false,
+        };
+      }),
+      ...LIST_WORK_ARRAY.slice(-6).map((item) => {
+        return {
+          nameWork: item.nameWork,
+          lineThought: true,
+        };
+      }),
+    ],
+    price: "39.990",
+  },
+  {
+    name: "MDM",
+    underName: "(Million Dollar Marketing)",
+    listWork: LIST_WORK_ARRAY,
+    price: "79.990",
+  },
 ];
+
+export const tariffPlanSettings = {
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+  slidesToShow: 3,
+};
