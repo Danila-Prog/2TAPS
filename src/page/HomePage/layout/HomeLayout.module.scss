@@ -17,12 +17,14 @@
     .illuminationMain {
         left: 0px;
         top: 0px;
+        z-index: 3;
     }
 
     .illuminationMain2 {
         right: 0;
         bottom: 0;
         transform: rotate(180deg);
+        z-index: 3;
     }
 }
 
@@ -126,6 +128,7 @@
 }
 
 
+
 @media screen and (min-width: 523px) {
     .aboutContainer {
         .containerBigCurve {
@@ -155,59 +158,58 @@
     .infoMainBlock {
         width: 85%;
     }
-}
 
-.aboutContainer {
-    .about {
-        width: 85%;
+    .aboutContainer {
+        .about {
+            width: 85%;
+        }
+
+        .smallCurve {
+            width: 260px;
+            height: 220px;
+        }
+
+        .containerBigCurve {
+            top: 20%;
+
+            .bigCurve {
+                width: 110vw;
+            }
+        }
     }
 
-    .smallCurve {
-        width: 260px;
-        height: 220px;
+    .containerTariffPlan {
+        .componentTariffPlan {
+            width: 85%;
+        }
+
+        .containerLight {
+            top: -5.208vw;
+
+            .light {
+                right: -10%;
+                width: 81.841vw;
+                height: 81.841vw;
+            }
+        }
     }
 
-    .containerBigCurve {
-        top: 20%;
+    .containerReviewAbout {
+        .componentReviewAbout {
+            width: 85%;
+        }
 
-        .bigCurve {
-            width: 110vw;
+        .containerGear {
+            top: -30vw;
+
+            .gear {
+                width: 52.083vw;
+                height: 52.083vw;
+                right: -30%;
+            }
         }
     }
 }
-
-.containerTariffPlan {
-    .componentTariffPlan {
-        width: 85%;
-    }
-
-    .containerLight {
-        top: -5.208vw;
-
-        .light {
-            right: -10%;
-            width: 81.841vw;
-            height: 81.841vw;
-        }
-    }
-}
-
-.containerReviewAbout {
-    .componentReviewAbout {
-        width: 85%;
-    }
-
-    .containerGear {
-        top: -30vw;
-
-        .gear {
-            width: 52.083vw;
-            height: 52.083vw;
-            right: -30%;
-        }
-    }
-}
-
 
 @media screen and (min-width: 866px) {
     .aboutContainer {

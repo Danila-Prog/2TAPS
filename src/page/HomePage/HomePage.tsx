@@ -8,13 +8,13 @@ import {
   TariffPlan,
   WhatWeCanDo,
 } from "./ui";
-
+import { BurgerMenu } from "../../shared";
 import { HomeLayout } from "./layout/HomeLayout";
 
 export const HomePage = () => {
   return (
     <HomeLayout
-      header={<Header />}
+      header={<Header burgerMenu={<BurgerMenu />} />}
       main={<Main />}
       about={<About />}
       applicationForm={<ApplicationForm />}

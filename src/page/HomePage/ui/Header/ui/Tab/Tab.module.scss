@@ -6,12 +6,15 @@
     height: 7.422vw;
     max-width: 176px;
     max-height: 80px;
+    cursor: pointer;
 
-    a {
+    button {
         font-size: 20px;
         font-family: $font-hikasami;
-        text-decoration: none;
         color: $primary-white;
+        background: transparent;
+        border: none;
+        cursor: pointer;
     }
 
     transition: .3s ease-in-out;
@@ -19,7 +22,6 @@
     &:hover {
         background: $button-violet-light;
         border-radius: 999999px;
-        cursor: pointer;
     }
 }
 

@@ -1,0 +1,45 @@
+.burgerMenu {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $primary-violet;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        color: $primary-white;
+        font-size: 32px;
+    }
+
+    .burgerMenuImage {
+        width: 91.542vw;
+        height: 91.542vw;
+        max-width: 500px;
+        max-height: 500px;
+        left: 50%;
+        transform: translateX(-50%)rotate(35deg);
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .burgerMenu {
+        ul {
+            width: 85%;
+        }
+    }
+}

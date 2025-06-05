@@ -7,10 +7,12 @@
 
 .componentIllumination {
     filter: blur(70px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .componentIllumination2 {
     filter: blur(70px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 @media screen and (min-width: 768px) {

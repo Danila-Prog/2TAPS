@@ -17,6 +17,7 @@ interface IHomeLayout {
   applicationForm: ReactElement;
   footer: ReactElement;
 }
+
 export const HomeLayout = ({
   header,
   main,
