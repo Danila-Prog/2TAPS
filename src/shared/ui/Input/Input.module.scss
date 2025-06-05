@@ -1,0 +1,102 @@
+.customInput {
+    display: block;
+    outline: none;
+    padding: 24px 15.5px;
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    font-size: 0.933rem;
+    font-weight: 400;
+    font-family: $font-hikasami;
+    border: none;
+
+    &::placeholder {
+        color: $primary-black;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.inputRadio {
+    appearance: none;
+    width: 4.975vw;
+    height: 4.975vw;
+    max-width: 32px;
+    max-height: 32px;
+    border-radius: 9999px;
+    background: white;
+    position: relative;
+    cursor: pointer;
+
+    &:checked::after {
+        content: "";
+        display: block;
+        width: 2.488vw;
+        height: 2.488vw;
+        max-width: 16px;
+        max-height: 16px;
+        background: $accent-gradient;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+.containerInput {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.labelInput {
+    font-size: 0.933rem;
+    font-family: $font-hikasami;
+    font-weight: 400;
+    color: $primary-white;
+}
+
+@media screen and (min-width: 768px) {
+    .inputRadio {
+        width: 2.604vw;
+        height: 2.604vw;
+
+        &:checked::after {
+            width: 1.302vw;
+            height: 1.302vw;
+        }
+    }
+
+    .labelInput {
+        font-size: 0.933rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .customInput {
+        padding: 30px 20px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+
+    .inputRadio {
+        gap: 16px;
+
+    }
+
+    .labelInput {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .inputRadio {
+        gap: 16px;
+    }
+}

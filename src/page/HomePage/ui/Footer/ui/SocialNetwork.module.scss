@@ -1,0 +1,19 @@
+.socialNetwork {
+    img {
+        width: 9.95vw;
+        height: 9.95vw;
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .socialNetwork {
+        img {
+            width: 5.859vw;
+            height: 5.859vw;
+            max-width: 70px;
+            max-height: 70px;
+        }
+    }
+}

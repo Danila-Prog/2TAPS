@@ -1,11 +1,11 @@
-.containerApplicatonForm {
+.containerApplicationForm {
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
 
     aside {
         position: relative;
-        width: 35%;
+        width: 25%;
 
         h3 {
             position: absolute;
@@ -33,7 +33,24 @@
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         padding: 33px 32px;
-        width: 60%;
+        width: 70%;
+        position: relative;
+
+        .contentApplicationForm {
+            position: relative;
+            z-index: 1;
+        }
+
+        .illuminationApplicationForm {
+            left: 0;
+            top: 0;
+        }
+
+        .illuminationApplicationForm2 {
+            right: 0;
+            bottom: 0;
+            transform: rotate(180deg);
+        }
 
         h3 {
             font-size: 1.6rem;
@@ -41,6 +58,7 @@
             font-family: $font-hikasami;
             color: $primary-white;
             margin-bottom: 32px;
+            position: relative;
         }
 
         .containerInputs {
@@ -48,23 +66,6 @@
             flex-direction: column;
             gap: 10px;
             margin-bottom: 40px;
-
-            input[type=text] {
-                display: block;
-                outline: none;
-                padding: 24px 15.5px;
-                width: 100%;
-                height: 44px;
-                border-radius: 10px;
-                font-size: 0.933rem;
-                font-weight: 400;
-                font-family: $font-hikasami;
-                border: none;
-
-                &::placeholder {
-                    color: black;
-                }
-            }
         }
 
         .containerPaymentMethod {
@@ -82,58 +83,28 @@
                 display: flex;
                 flex-direction: column;
                 gap: 25px;
-
-                div {
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-
-
-                    input[type=radio] {
-                        appearance: none;
-                        width: 4.975vw;
-                        height: 4.975vw;
-                        max-width: 32px;
-                        max-height: 32px;
-                        border-radius: 9999px;
-                        background: white;
-                        position: relative;
-                        cursor: pointer;
-
-                        &:checked::after {
-                            content: "";
-                            display: block;
-                            width: 2.488vw;
-                            height: 2.488vw;
-                            max-width: 16px;
-                            max-height: 16px;
-                            background: $accent-gradient;
-                            border-radius: 50%;
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-
-                        }
-                    }
-
-                    label {
-                        font-size: 0.933rem;
-                        font-family: $font-hikasami;
-                        font-weight: 400;
-                        color: $primary-white;
-                    }
-                }
             }
-
         }
     }
 }
 
 
+@media screen and (min-width: 676px) {
+    .containerApplicationForm {
+        .applicationForm {
+            .containerPaymentMethod {
+                .paymentMethod {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 25px;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width:768px) {
-    .containerApplicatonForm {
+    .containerApplicationForm {
 
         aside {
             width: 35%;
@@ -163,40 +134,13 @@
                     color: $primary-white;
                     margin-bottom: 24px;
                 }
-
-                .paymentMethod {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 25px;
-
-                    div {
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
-
-                        input[type=radio] {
-                            width: 2.604vw;
-                            height: 2.604vw;
-
-                            &:checked::after {
-                                width: 1.302vw;
-                                height: 1.302vw;
-                            }
-                        }
-
-                        label {
-                            font-size: 0.933rem;
-                        }
-                    }
-                }
-
             }
         }
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .containerApplicatonForm {
+    .containerApplicationForm {
         width: 93%;
         margin: 0 auto;
         padding-bottom: 200px;
@@ -233,12 +177,6 @@
             .containerInputs {
                 gap: 24px;
                 margin-bottom: 32px;
-
-                input[type=text] {
-                    padding: 30px 20px;
-                    border-radius: 20px;
-                    font-size: 20px;
-                }
             }
 
             .containerPaymentMethod {
@@ -252,14 +190,6 @@
                 .paymentMethod {
                     flex-direction: column;
                     gap: 20px;
-
-                    div {
-                        gap: 16px;
-
-                        label {
-                            font-size: 20px;
-                        }
-                    }
                 }
 
             }
@@ -268,7 +198,7 @@
 }
 
 @media screen and (min-width: 1220px) {
-    .containerApplicatonForm {
+    .containerApplicationForm {
         .applicationForm {
             .containerPaymentMethod {
                 margin-bottom: 80px;
@@ -284,7 +214,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .containerApplicatonForm {
+    .containerApplicationForm {
         aside {
             h3 {
                 max-width: 624px;
@@ -306,12 +236,7 @@
             .containerPaymentMethod {
                 .paymentMethod {
                     gap: 48px;
-
-                    div {
-                        gap: 16px;
-                    }
                 }
-
             }
         }
     }

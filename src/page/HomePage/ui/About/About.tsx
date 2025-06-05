@@ -6,20 +6,21 @@ export const About = () => {
   return (
     <section className={styles.about}>
       <h2>Давайте знакомиться!</h2>
-      <div className={styles.aboutDescription}>
+
+      <main className={styles.aboutDescription}>
         <p>
           Lorem ipsum dolor sit amet consectetur. Risus dolor sollicitudin ac
           maecenas massa eget enim. Sagittis enim scelerisque consequat fames ut
           congue diam aenean sit. Posuere metus sed nec phasellus morbi odio
           ipsum turpis eu.
         </p>
-      </div>
+      </main>
 
-      <div className={styles.cardsBlock}>
+      <section className={styles.cardsBlock}>
         {CARD_ABOUT.map((card, index) => (
           <CardAbout key={index} {...card} />
         ))}
-      </div>
+      </section>
     </section>
   );
 };

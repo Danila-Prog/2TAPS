@@ -5,6 +5,7 @@ import big_curve from "/public/svg/big_curve.svg";
 import light from "/public/svg/light.svg";
 import gear from "/public/svg/gear.svg";
 import { ReactElement } from "react";
+import { ContainerIllumination } from "@/shared";
 
 interface IHomeLayout {
   header: ReactElement;
@@ -30,6 +31,11 @@ export const HomeLayout = ({
     <div className={styles.containerLayout}>
       <main className={styles.mainBlock}>
         <div className={styles.infoMainBlock}>
+          <ContainerIllumination
+            stylesIllumination1={styles.illuminationMain}
+            stylesIllumination2={styles.illuminationMain2}
+          />
+
           {header}
           {main}
         </div>

@@ -7,11 +7,23 @@
     background: $primary-violet;
     padding-bottom: 116px;
     border-radius: 0px 0px 40px 40px;
+    position: relative;
 }
 
 .infoMainBlock {
     width: 80%;
     margin: 0 auto;
+
+    .illuminationMain {
+        left: 0px;
+        top: 0px;
+    }
+
+    .illuminationMain2 {
+        right: 0;
+        bottom: 0;
+        transform: rotate(180deg);
+    }
 }
 
 
@@ -48,7 +60,7 @@
             height: 101.741vw;
             left: -20%;
             position: relative;
-            z-index: -1;
+            z-index: 1;
         }
     }
 }
@@ -84,9 +96,8 @@
 }
 
 .containerReviewAbout {
-    position: relative;
     padding-bottom: 100px;
-
+    position: relative;
 
     .componentReviewAbout {
         position: relative;
@@ -144,58 +155,59 @@
     .infoMainBlock {
         width: 85%;
     }
+}
 
-    .aboutContainer {
-        .about {
-            width: 85%;
-        }
-
-        .smallCurve {
-            width: 260px;
-            height: 220px;
-        }
-
-        .containerBigCurve {
-            top: 20%;
-
-            .bigCurve {
-                width: 110vw;
-            }
-        }
+.aboutContainer {
+    .about {
+        width: 85%;
     }
 
-    .containerTariffPlan {
-        .componentTariffPlan {
-            width: 85%;
-        }
-
-        .containerLight {
-            top: -5.208vw;
-
-            .light {
-                right: -10%;
-                width: 81.841vw;
-                height: 81.841vw;
-            }
-        }
+    .smallCurve {
+        width: 260px;
+        height: 220px;
     }
 
-    .containerReviewAbout {
-        .componentReviewAbout {
-            width: 85%;
-        }
+    .containerBigCurve {
+        top: 20%;
 
-        .containerGear {
-            top: -30vw;
-
-            .gear {
-                width: 52.083vw;
-                height: 52.083vw;
-                right: -30%;
-            }
+        .bigCurve {
+            width: 110vw;
         }
     }
 }
+
+.containerTariffPlan {
+    .componentTariffPlan {
+        width: 85%;
+    }
+
+    .containerLight {
+        top: -5.208vw;
+
+        .light {
+            right: -10%;
+            width: 81.841vw;
+            height: 81.841vw;
+        }
+    }
+}
+
+.containerReviewAbout {
+    .componentReviewAbout {
+        width: 85%;
+    }
+
+    .containerGear {
+        top: -30vw;
+
+        .gear {
+            width: 52.083vw;
+            height: 52.083vw;
+            right: -30%;
+        }
+    }
+}
+
 
 @media screen and (min-width: 866px) {
     .aboutContainer {

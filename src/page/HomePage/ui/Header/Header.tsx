@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styles from "./Header.module.scss";
-import Link from "next/link";
 import burger_menu from "/public/svg/burger_menu.svg";
 import { Button, Logo } from "@/shared";
+import { LIST_TAB } from "./lib/listTab";
+import { Tab } from "./ui/Tab";
 
 export const Header = () => {
   return (
@@ -14,18 +15,9 @@ export const Header = () => {
 
         <nav className={styles.centerSection}>
           <ul>
-            <li>
-              <Link href={"/"}>Главная</Link>
-            </li>
-            <li>
-              <Link href={"/"}>Услуги</Link>
-            </li>
-            <li>
-              <Link href={"/"}>Отзывы</Link>
-            </li>
-            <li>
-              <Link href={"/"}>Связаться</Link>
-            </li>
+            {LIST_TAB.map((tab) => (
+              <Tab key={tab.id} {...tab} />
+            ))}
           </ul>
         </nav>
 

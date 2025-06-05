@@ -1,0 +1,30 @@
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.207vw;
+    height: 7.422vw;
+    max-width: 176px;
+    max-height: 80px;
+
+    a {
+        font-size: 20px;
+        font-family: $font-hikasami;
+        text-decoration: none;
+        color: $primary-white;
+    }
+
+    transition: .3s ease-in-out;
+
+    &:hover {
+        background: $button-violet-light;
+        border-radius: 999999px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .tab {
+        max-height: 91px;
+    }
+}

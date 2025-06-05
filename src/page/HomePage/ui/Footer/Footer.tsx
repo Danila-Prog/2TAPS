@@ -1,13 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./Footer.module.scss";
-import telegram from "/public/icons/telegram.png";
-import whatsapp from "/public/icons/whatsapp.png";
-import vk from "/public/icons/vk.png";
-import phone from "/public/icons/phone.png";
 import footer_svg_mobile from "/public/svg/footer_svg_mobile.svg";
 import footer_svg_tablet from "/public/svg/footer_svg_tablet.svg";
 import { Logo } from "@/shared";
+import { LIST_SOCIAL_NETWORK } from "./lib/listSocialNetwork";
+import { SocialNetwork } from "./ui/SocialNetwork";
 
 export const Footer = () => {
   return (
@@ -33,26 +30,9 @@ export const Footer = () => {
       <nav>
         <h4>Свяжитесь с нами</h4>
         <ul>
-          <li>
-            <Link href={""}>
-              <Image src={telegram} alt="" />
-            </Link>
-          </li>
-          <li>
-            <Link href={""}>
-              <Image src={whatsapp} alt="" />
-            </Link>
-          </li>
-          <li>
-            <Link href={""}>
-              <Image src={vk} alt="" />
-            </Link>
-          </li>
-          <li>
-            <Link href={""}>
-              <Image src={phone} alt="" />
-            </Link>
-          </li>
+          {LIST_SOCIAL_NETWORK.map((social) => (
+            <SocialNetwork key={social.id} {...social} />
+          ))}
         </ul>
       </nav>
 

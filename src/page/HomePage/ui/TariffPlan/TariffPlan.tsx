@@ -1,27 +1,9 @@
 import { TariffCard } from "./ui/TariffCard";
 import styles from "./TariffPlan.module.scss";
-import { TARIFF_CARD_INFO } from "./lib/consts";
+import { TARIFF_CARD_INFO, tariffPlanSettings } from "./lib/consts";
 import { ProjectSlider } from "@/shared";
-import { Settings } from "react-slick";
 
 export const TariffPlan = () => {
-  const tariffPlanSettings: Settings = {
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-    slidesToShow: 3,
-  };
   return (
     <section className={styles.tariffPlan}>
       <h2>Тарифные планы</h2>

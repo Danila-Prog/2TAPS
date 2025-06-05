@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/shared";
 import styles from "./TariffCard.module.scss";
 

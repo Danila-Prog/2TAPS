@@ -3,7 +3,7 @@
 import { ReviewAboutCard } from "./ui/ReviewAboutCard";
 import styles from "./ReviewsAbout.module.scss";
 import { REVIEW_ABOUT_ARRAY, reviewsAboutSettings } from "./lib/consts";
-import { ProjectSlider, SwipeButton } from "@/shared";
+import { ContainerIllumination, ProjectSlider, SwipeButton } from "@/shared";
 import { useRef } from "react";
 import Slider from "react-slick";
 
@@ -18,6 +18,11 @@ export const ReviewAbout = () => {
       <h2>Отзывы о нас</h2>
 
       <div className={styles.containerInfoReviewAbout}>
+        <ContainerIllumination
+          stylesIllumination1={styles.illuminationReviewAbout}
+          stylesIllumination2={styles.illuminationReviewAbout2}
+        />
+
         <div className={styles.infoReviewAbout}>
           <h3>Мы попросили наших клиентов написать пару слов о нас</h3>
           <div className={styles.containerSwitchTablet}>
