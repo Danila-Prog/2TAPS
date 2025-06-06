@@ -24,7 +24,7 @@ export const ReviewAboutCard = ({
 
         <div className={styles.containerStars}>
           {stars.map((star, index) => (
-            <Image key={index} src={star} alt="star" />
+            <Image key={index} width={1} height={1} src={star} alt="star" />
           ))}
         </div>
       </header>

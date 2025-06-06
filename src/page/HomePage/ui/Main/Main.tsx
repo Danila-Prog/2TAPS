@@ -7,7 +7,7 @@ export const Main = () => {
   return (
     <main className={styles.main}>
       <h1>Хотите продвинуть свой бизнес в интернете?</h1>
-      <Image src={main_logo} alt="" />
+      <Image src={main_logo} alt="main logo 2TAPS" priority={true} />
       <p>
         <span className={styles.descriptionTextAdaptiveMobile}>
           Выбирая нас, вы получаете не просто сайт, а мощный инструмент для

@@ -16,12 +16,18 @@ export const ContainerIllumination = ({
       <Image
         src={illumination}
         alt="Illumination one"
+        width={1}
+        height={1}
+        priority={true}
         className={`${styles.generalStyleIllumination} ${styles.componentIllumination} ${stylesIllumination1}`}
       />
 
       <Image
         src={illumination}
         alt="Illumination two"
+        width={1}
+        height={1}
+        priority={true}
         className={`${styles.generalStyleIllumination} ${styles.componentIllumination2} ${stylesIllumination2}`}
       />
     </>

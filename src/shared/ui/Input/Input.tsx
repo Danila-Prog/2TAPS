@@ -21,6 +21,7 @@ export const Input = ({
     <div className={type === "radio" ? styles.containerInput : ""}>
       <input
         id={id}
+        required
         type={type}
         className={`${
           mainStyle === "default" ? styles.customInput : styles.inputRadio

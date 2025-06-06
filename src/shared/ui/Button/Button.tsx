@@ -1,14 +1,23 @@
-import { ComponentProps, ReactNode } from "react";
+import { ComponentProps } from "react";
 import styles from "./Button.module.scss";
+import Image from "next/image";
+import button_arrow_down from "/public/svg/button_arrow_down.svg";
 
 interface IButton extends ComponentProps<"button"> {
-  children: ReactNode;
-  size: "sm" | "md" | "lg" | "xl";
-  variantColor: "primaryOutline" | "accentOutline" | "violet" | "white";
+  children?: string;
+  typeChildren?: "text" | "image";
+  size: "sm" | "md" | "lg" | "xl" | "image";
+  variantColor:
+    | "primaryOutline"
+    | "accentOutline"
+    | "lightViolet"
+    | "darkViolet"
+    | "white";
   className?: string;
 }
 
 export const Button = ({
+  typeChildren = "text",
   children,
   size,
   variantColor,
@@ -20,10 +29,12 @@ export const Button = ({
     md: styles.buttonMD,
     lg: styles.buttonLG,
     xl: styles.buttonXL,
+    image: styles.buttonImage,
   }[size];
 
   const VARIANT_COLOR = {
-    violet: styles.violet,
+    lightViolet: styles.lightViolet,
+    darkViolet: styles.darkViolet,
     white: styles.white,
     primaryOutline: styles.primaryOutline,
     accentOutline: styles.accentOutline,
@@ -34,7 +45,11 @@ export const Button = ({
       className={`${styles.button} ${SIZE} ${VARIANT_COLOR} ${className}`}
       {...buttonProps}
     >
-      <span className={styles.btnText}>{children}</span>
+      {typeChildren === "text" ? (
+        <span className={styles.btnText}>{children}</span>
+      ) : (
+        <Image src={button_arrow_down} alt="button arrow down" />
+      )}
     </button>
   );
 };
