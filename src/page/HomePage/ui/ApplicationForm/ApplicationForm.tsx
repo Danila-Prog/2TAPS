@@ -7,15 +7,18 @@ import styles from "./ApplicationForm.module.scss";
 import { useApplicationForm } from "./model/useApplicationForm";
 import { INITIAL_COMMUNICATION_STATE } from "./lib/consts";
 import { TCommunicationMethod } from "./lib/types";
+import { useRef } from "react";
 
 export const ApplicationForm = () => {
+  const formRef = useRef<HTMLFormElement | null>(null);
+
   const {
     formData,
-    handleOnSubmit,
+    handleSendEmail,
     communicationMethod,
     handleInputChange,
     handleCommunicationChange,
-  } = useApplicationForm();
+  } = useApplicationForm(formRef);
 
   return (
     <section className={styles.containerApplicationForm}>
@@ -25,8 +28,8 @@ export const ApplicationForm = () => {
       </aside>
 
       <form
-        action=""
-        onSubmit={handleOnSubmit}
+        ref={formRef}
+        onSubmit={handleSendEmail}
         className={styles.applicationForm}
       >
         <ContainerIllumination
@@ -39,12 +42,14 @@ export const ApplicationForm = () => {
 
           <div className={styles.containerInputs}>
             <Input
+              name="name"
               placeholder="Имя"
               value={formData.name}
               onChange={handleInputChange("name")}
             />
 
             <Input
+              name="surname"
               placeholder="Фамилия"
               value={formData.surname}
               onChange={handleInputChange("surname")}
@@ -52,6 +57,7 @@ export const ApplicationForm = () => {
 
             <Input
               type="number"
+              name="numberPhone"
               placeholder="Телефон"
               value={formData.numberPhone}
               onChange={handleInputChange("numberPhone")}
@@ -65,8 +71,10 @@ export const ApplicationForm = () => {
                 <Input
                   key={method}
                   type="radio"
+                  name="methodCommunication"
                   id={method}
                   label
+                  value={method}
                   labelName={
                     method === "whatsApp"
                       ? "WhatsApp"
