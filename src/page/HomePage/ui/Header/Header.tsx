@@ -7,7 +7,7 @@ import { Button, Logo } from "@/shared";
 import { LIST_TAB } from "./lib/listTab";
 import { Tab } from "./ui/Tab/Tab";
 import { useSwitchBurgerMenu } from "./model/useSwitchBurgerMenu";
-import { ReactElement } from "react";
+import { ReactElement, useEffect } from "react";
 import cross from "/public/svg/cross.svg";
 interface IHeader {
   burgerMenu: ReactElement;
@@ -16,6 +16,14 @@ interface IHeader {
 export const Header = ({ burgerMenu }: IHeader) => {
   const { isActiveBurgerMenu, toggleSetIsActiveBurgerMenu } =
     useSwitchBurgerMenu();
+
+  useEffect(() => {
+    if (isActiveBurgerMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isActiveBurgerMenu]);
 
   return (
     <>
