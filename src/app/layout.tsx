@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"), // заменить на домен
+
   title: "Two Tap",
 
   description:
@@ -17,17 +19,8 @@ export const metadata: Metadata = {
     title: "Two Tap — Профессиональная разработка сайтов",
     description:
       "Создаем продающие сайты для вашего бизнеса. Оставьте заявку и получите бесплатную консультацию!",
-    // images: "...",
+    images: "/icons/logo.png",
     type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Two Tap — Профессиональная разработка сайтов",
-    description:
-      "Создаем продающие сайты для вашего бизнеса. Оставьте заявку и получите бесплатную консультацию!",
-    // site: "логин аккаунта сайта в twitter",
-    // images: "",
   },
 };
 

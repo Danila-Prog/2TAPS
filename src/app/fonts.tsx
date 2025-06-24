@@ -1,25 +1,24 @@
-import { Literata } from "next/font/google";
 import localFont from "next/font/local";
 
 export const hikasami = localFont({
   src: [
     {
-      path: "../../public/hikasami_Font/Hikasami-Regular.ttf",
+      path: "../../public/fonts/hikasami_Font/Hikasami-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/hikasami_Font/Hikasami-Medium.ttf",
+      path: "../../public/fonts/hikasami_Font/Hikasami-Medium.ttf",
       weight: "500",
       style: "medium",
     },
     {
-      path: "../../public/hikasami_Font/Hikasami-SemiBold.ttf",
+      path: "../../public/fonts/hikasami_Font/Hikasami-SemiBold.ttf",
       weight: "600",
       style: "semibold",
     },
     {
-      path: "../../public/hikasami_Font/Hikasami-Bold.ttf",
+      path: "../../public/fonts/hikasami_Font/Hikasami-Bold.ttf",
       weight: "700",
       style: "bold",
     },
@@ -27,8 +26,13 @@ export const hikasami = localFont({
   variable: "--font-hikasami",
 });
 
-export const liter = Literata({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+export const liter = localFont({
+  src: [
+    {
+      path: "../../public/fonts/liter_Font/Liter-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
   variable: "--font-liter",
 });

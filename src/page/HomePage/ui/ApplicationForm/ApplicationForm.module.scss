@@ -29,7 +29,9 @@
     }
 
     .applicationForm {
-        background: $primary-violet;
+        background-image: url("../../../../../public/icons/bg_application_form.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         padding: 33px 32px;
@@ -39,17 +41,6 @@
         .contentApplicationForm {
             position: relative;
             z-index: 1;
-        }
-
-        .illuminationApplicationForm {
-            left: 0;
-            top: 0;
-        }
-
-        .illuminationApplicationForm2 {
-            right: 0;
-            bottom: 0;
-            transform: rotate(180deg);
         }
 
         h3 {

@@ -58,11 +58,11 @@
     }
 
     nav {
-        margin-bottom: 41px;
+        margin-bottom: 25px;
 
         h4 {
             font-size: 1.6rem;
-            font-weight: 600;
+            font-weight: 400;
             font-family: $font-liter;
             color: $primary-white;
             line-height: 1;
@@ -74,6 +74,14 @@
             gap: 16px;
             list-style-type: none;
         }
+    }
+
+    .ourPartners {
+        display: block;
+        margin-bottom: 41px;
+        font-size: 1.6rem;
+        color: $primary-white;
+        text-decoration: underline solid white 1px;
     }
 
     .footerSvgMobile {
@@ -123,6 +131,10 @@
             ul {
                 gap: 24px;
             }
+        }
+
+        .ourPartners {
+            margin-bottom: 0;
         }
 
         .footerSvgMobile {
@@ -189,11 +201,17 @@
         }
 
         nav {
+            margin-bottom: 64px;
+
             h4 {
                 font-size: 2.286rem;
                 height: 48px;
-                margin-bottom: 64px;
+                margin-bottom: 32px;
             }
+        }
+
+        .ourPartners {
+            font-size: 2.286rem;
         }
 
         .footerSvgTablet {

@@ -15,7 +15,7 @@ export const SocialNetwork = ({
 }: ISocialNetwork) => {
   return (
     <li>
-      <Link href={hrefLink} className={styles.socialNetwork}>
+      <Link href={hrefLink} className={styles.socialNetwork} target="_blank">
         <Image src={srcImage} alt={altImage} />
       </Link>
     </li>

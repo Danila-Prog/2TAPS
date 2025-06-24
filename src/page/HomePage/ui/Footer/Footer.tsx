@@ -36,6 +36,8 @@ export const Footer = () => {
         </ul>
       </nav>
 
+      <span className={styles.ourPartners}>Наши партнёры: S2S</span>
+
       <Image
         src={footer_svg_mobile}
         alt="footer svg mobile"

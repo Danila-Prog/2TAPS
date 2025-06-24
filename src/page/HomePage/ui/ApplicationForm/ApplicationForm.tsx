@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, ContainerIllumination, Input } from "@/shared";
+import { Button, Input } from "@/shared";
 import Image from "next/image";
 import form_bg from "/public/icons/form_bg.png";
 import styles from "./ApplicationForm.module.scss";
@@ -19,6 +19,7 @@ export const ApplicationForm = () => {
     handleInputChange,
     handleCommunicationChange,
   } = useApplicationForm(formRef);
+  console.log(formData.numberPhone);
 
   return (
     <section className={styles.containerApplicationForm}>
@@ -32,11 +33,6 @@ export const ApplicationForm = () => {
         onSubmit={handleSendEmail}
         className={styles.applicationForm}
       >
-        <ContainerIllumination
-          stylesIllumination1={styles.illuminationApplicationForm}
-          stylesIllumination2={styles.illuminationApplicationForm2}
-        />
-
         <div className={styles.contentApplicationForm}>
           <h3>Введите ваши данные</h3>
 
@@ -56,11 +52,18 @@ export const ApplicationForm = () => {
             />
 
             <Input
-              type="number"
+              type="text"
               name="numberPhone"
               placeholder="Телефон"
+              maxLength={10}
               value={formData.numberPhone}
-              onChange={handleInputChange("numberPhone")}
+              onChange={(e) => {
+                const onlyNumbers = e.target.value.replace(/\D/g, "");
+                handleInputChange("numberPhone")({
+                  ...e,
+                  target: { ...e.target, value: onlyNumbers },
+                });
+              }}
             />
           </div>
 

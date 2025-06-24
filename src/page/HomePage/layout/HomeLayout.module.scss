@@ -4,28 +4,16 @@
 }
 
 .mainBlock {
-    background: $primary-violet;
+    background-image: url('../../../../public/icons/bg_main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: 116px;
     border-radius: 0px 0px 40px 40px;
-    position: relative;
 }
 
 .infoMainBlock {
     width: 80%;
     margin: 0 auto;
-
-    .illuminationMain {
-        left: 0px;
-        top: 0px;
-        z-index: 3;
-    }
-
-    .illuminationMain2 {
-        right: 0;
-        bottom: 0;
-        transform: rotate(180deg);
-        z-index: 3;
-    }
 }
 
 
