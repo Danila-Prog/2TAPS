@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: "Two Tap — Профессиональная разработка сайтов",
     description:
       "Создаем продающие сайты для вашего бизнеса. Оставьте заявку и получите бесплатную консультацию!",
-    images: "/icons/logo.png",
+    images: "public/icons/logo.png",
     type: "website",
   },
 };

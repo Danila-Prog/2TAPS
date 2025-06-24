@@ -17,7 +17,7 @@ export const useInfoCards = () => {
       title: "Веб-дизайн",
       description:
         "Lorem ipsum dolor sit amet consectetur. Luctus at tortor nisl condimentum turpis cras ac tincidunt. Morbi leo ornare augue pharetra fermentum adipiscing lobortis. Cras lobortis curabitur eu volutpat dui sem.",
-      imgSrc: width > 768 ? svg_web : svg_web_phone,
+      imgSrc: (width as number) > 768 ? svg_web : svg_web_phone,
       imgAlt: "Image in the web design card",
     },
     {
@@ -25,7 +25,7 @@ export const useInfoCards = () => {
       title: "Разработка",
       description:
         "Lorem ipsum dolor sit amet consectetur. Luctus at tortor nisl condimentum turpis cras ac tincidunt. Morbi leo ornare augue pharetra fermentum adipiscing lobortis. Cras lobortis curabitur eu volutpat dui sem.",
-      imgSrc: width > 768 ? svg_development : svg_development_phone,
+      imgSrc: (width as number) > 768 ? svg_development : svg_development_phone,
       imgAlt: "Image in the development card",
     },
     {
@@ -33,7 +33,7 @@ export const useInfoCards = () => {
       title: "Брендинг",
       description:
         "Lorem ipsum dolor sit amet consectetur. Luctus at tortor nisl condimentum turpis cras ac tincidunt. Morbi leo ornare augue pharetra fermentum adipiscing lobortis. Cras lobortis curabitur eu volutpat dui sem.",
-      imgSrc: width > 768 ? svg_branding : svg_branding_phone,
+      imgSrc: (width as number) > 768 ? svg_branding : svg_branding_phone,
       imgAlt: "Image in the branding card",
     },
   ];
