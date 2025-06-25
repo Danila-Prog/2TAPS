@@ -6,9 +6,11 @@
 
 html {
   font-size: 15px;
-  overscroll-behavior-y: contain;
 }
 
+body {
+  overscroll-behavior: none;
+}
 
 @media screen and (min-width: 425px) {
   html {
