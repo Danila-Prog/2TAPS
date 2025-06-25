@@ -1,21 +1,18 @@
 import {
-  Header,
-  Main,
   About,
   ApplicationForm,
   Footer,
+  HeaderMainWrapper,
   ReviewAbout,
   TariffPlan,
   WhatWeCanDo,
 } from "./ui";
-import { BurgerMenu } from "../../shared";
 import { HomeLayout } from "./layout/HomeLayout";
 
 export const HomePage = () => {
   return (
     <HomeLayout
-      header={<Header burgerMenu={<BurgerMenu />} />}
-      main={<Main />}
+      infoMain={<HeaderMainWrapper />}
       about={<About />}
       applicationForm={<ApplicationForm />}
       footer={<Footer />}

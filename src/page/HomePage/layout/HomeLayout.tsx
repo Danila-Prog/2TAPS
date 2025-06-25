@@ -7,8 +7,7 @@ import gear from "/public/svg/gear.svg";
 import { ReactElement } from "react";
 
 interface IHomeLayout {
-  header: ReactElement;
-  main: ReactElement;
+  infoMain: ReactElement;
   about: ReactElement;
   whatWeCanDo: ReactElement;
   tariffPlan: ReactElement;
@@ -18,8 +17,7 @@ interface IHomeLayout {
 }
 
 export const HomeLayout = ({
-  header,
-  main,
+  infoMain,
   about,
   whatWeCanDo,
   tariffPlan,
@@ -30,10 +28,7 @@ export const HomeLayout = ({
   return (
     <div className={styles.containerLayout}>
       <main className={styles.mainBlock}>
-        <div className={styles.infoMainBlock}>
-          {header}
-          {main}
-        </div>
+        <div className={styles.infoMainBlock}>{infoMain}</div>
       </main>
 
       <section className={styles.aboutContainer}>

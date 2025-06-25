@@ -3,9 +3,18 @@ import main_logo from "/public/icons/main_logo.png";
 import { Button } from "@/shared";
 import styles from "./Main.module.scss";
 
-export const Main = () => {
+interface IMain {
+  isActiveBurgerMenu: boolean;
+}
+
+export const Main = ({ isActiveBurgerMenu }: IMain) => {
   return (
-    <main className={styles.main}>
+    <main
+      className={styles.main}
+      style={{
+        opacity: isActiveBurgerMenu ? "0" : "1",
+      }}
+    >
       <h1>Хотите продвинуть свой бизнес в интернете?</h1>
       <Image src={main_logo} alt="main logo 2TAPS" priority={true} />
       <p>

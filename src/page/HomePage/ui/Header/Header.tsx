@@ -6,17 +6,20 @@ import burger_menu from "/public/svg/burger_menu.svg";
 import { Button, Logo } from "@/shared";
 import { LIST_TAB } from "./lib/listTab";
 import { Tab } from "./ui/Tab/Tab";
-import { useSwitchBurgerMenu } from "./model/useSwitchBurgerMenu";
 import { ReactElement, useEffect } from "react";
 import cross from "/public/svg/cross.svg";
+
 interface IHeader {
   burgerMenu: ReactElement;
+  isActiveBurgerMenu: boolean;
+  toggleSetIsActiveBurgerMenu: () => void;
 }
 
-export const Header = ({ burgerMenu }: IHeader) => {
-  const { isActiveBurgerMenu, toggleSetIsActiveBurgerMenu } =
-    useSwitchBurgerMenu();
-
+export const Header = ({
+  isActiveBurgerMenu,
+  toggleSetIsActiveBurgerMenu,
+  burgerMenu,
+}: IHeader) => {
   useEffect(() => {
     if (isActiveBurgerMenu) {
       document.body.style.overflow = "hidden";

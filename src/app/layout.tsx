@@ -3,6 +3,7 @@ import "./globals.css";
 import { hikasami, liter } from "./fonts";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"), // заменить на домен
 

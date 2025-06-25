@@ -6,6 +6,11 @@ type TLogo = { additionalStyle?: string };
 
 export const Logo = ({ additionalStyle }: TLogo) => {
   return (
-    <Image src={logo} alt="" className={`${styles.logo} ${additionalStyle}`} />
+    <Image
+      src={logo}
+      alt="logo"
+      priority={true}
+      className={`${styles.logo} ${additionalStyle}`}
+    />
   );
 };

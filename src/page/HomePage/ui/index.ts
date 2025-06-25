@@ -6,3 +6,4 @@ export { Main } from "./Main/Main";
 export { ReviewAbout } from "./ReviewsAbout/ReviewsAbout";
 export { TariffPlan } from "./TariffPlan/TariffPlan";
 export { WhatWeCanDo } from "./WhatWeCanDo/WhatWeCanDo";
+export { HeaderMainWrapper } from "./HeaderMainWrapper/HeaderMainWrapper";

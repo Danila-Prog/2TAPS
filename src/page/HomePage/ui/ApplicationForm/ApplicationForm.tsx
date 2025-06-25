@@ -19,7 +19,6 @@ export const ApplicationForm = () => {
     handleInputChange,
     handleCommunicationChange,
   } = useApplicationForm(formRef);
-  console.log(formData.numberPhone);
 
   return (
     <section className={styles.containerApplicationForm}>
