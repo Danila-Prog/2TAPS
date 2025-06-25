@@ -33,7 +33,7 @@ const LIST_WORK_ARRAY = [
 
 export const TARIFF_CARD_INFO = [
   {
-    name: "VIP",
+    name: "Standard",
     listWork: [
       ...LIST_WORK_ARRAY.slice(0, LIST_WORK_ARRAY.length - 11).map((item) => ({
         nameWork: item.nameWork,
@@ -47,7 +47,7 @@ export const TARIFF_CARD_INFO = [
     price: "29.990",
   },
   {
-    name: "Platinum",
+    name: "Premium",
     listWork: [
       ...LIST_WORK_ARRAY.slice(0, LIST_WORK_ARRAY.length - 6).map((item) => {
         return {
@@ -65,8 +65,7 @@ export const TARIFF_CARD_INFO = [
     price: "39.990",
   },
   {
-    name: "MDM",
-    underName: "(Million Dollar Marketing)",
+    name: "Ultimate",
     listWork: LIST_WORK_ARRAY,
     price: "79.990",
   },

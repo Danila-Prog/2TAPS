@@ -6,10 +6,7 @@
     display: flex;
     cursor: pointer;
     border-radius: 99999px;
-    background:
-        linear-gradient(white, white) padding-box,
-        $accent-gradient border-box;
-    border: 1px solid transparent;
+    border: 1px solid black;
 
     img {
         margin: auto;

@@ -9,23 +9,14 @@ interface IListWork {
 
 interface ITariffCard {
   name: string;
-  underName?: string;
   price: string;
   listWork: IListWork[];
 }
 
-export const TariffCard = ({
-  name,
-  underName,
-  price,
-  listWork,
-}: ITariffCard) => {
+export const TariffCard = ({ name, price, listWork }: ITariffCard) => {
   return (
     <article className={styles.tariffCard}>
-      <div className={styles.containerName}>
-        <h3 style={{ margin: !underName ? "auto 0" : "" }}>{name}</h3>
-        {underName && <span className={styles.underName}>{underName}</span>}
-      </div>
+      <h3 className={styles.name}>{name}</h3>
 
       <span className={styles.titleListWork}>Перечень работ</span>
 

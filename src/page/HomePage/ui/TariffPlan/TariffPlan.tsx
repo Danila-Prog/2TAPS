@@ -11,11 +11,11 @@ export const TariffPlan = () => {
       <ProjectSlider
         otherSettings={tariffPlanSettings}
         className={styles.groupTariffCard}
+        dotsColor="gradient"
         component={TARIFF_CARD_INFO.map((tariff) => (
           <TariffCard
             key={tariff.name}
             name={tariff.name}
-            underName={tariff.underName}
             price={tariff.price}
             listWork={tariff.listWork}
           />

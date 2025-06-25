@@ -26,32 +26,18 @@
         pointer-events: none;
     }
 
-    .containerName {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 140px;
 
-        h3 {
-            background-image: $accent-gradient;
-            background-clip: text;
-            color: transparent;
-            font-family: $font-hikasami;
-            font-size: 3.2rem;
-            font-weight: 400;
-            line-height: 1;
-        }
-
-        .underName {
-            background-image: $accent-gradient;
-            background-clip: text;
-            color: transparent;
-            font-size: 32px;
-            font-weight: 500;
-            font-family: $font-hikasami;
-            margin-top: 5px;
-        }
+    .name {
+        background-image: $accent-gradient;
+        background-clip: text;
+        color: transparent;
+        font-family: $font-hikasami;
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 48px;
     }
+
 
     .titleListWork {
         display: block;
@@ -137,12 +123,9 @@
     .tariffCard {
         padding: 55px 40px;
 
-        .containerName {
-
-            h3 {
-                font-size: 64px;
-                font-weight: 600;
-            }
+        .name {
+            font-size: 64px;
+            font-weight: 600;
         }
 
         .titleListWork {
@@ -169,9 +152,8 @@
     .tariffCard {
         padding: 64px 51px;
 
-        .containerName {
-            margin-bottom: 48px;
-            height: 110px;
+        .name {
+            margin-bottom: 69px;
         }
 
         .titleListWork {

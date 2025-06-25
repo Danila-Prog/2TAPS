@@ -6,6 +6,7 @@ import { REVIEW_ABOUT_ARRAY, reviewsAboutSettings } from "./lib/consts";
 import { ProjectSlider, SwipeButton } from "@/shared";
 import { useRef } from "react";
 import Slider from "react-slick";
+import "../../../../shared/ui/ProjectSlider/pagingGradient.scss";
 
 export const ReviewAbout = () => {
   const sliderRef = useRef<Slider>(null);
@@ -28,7 +29,8 @@ export const ReviewAbout = () => {
 
         <ProjectSlider
           otherSettings={reviewsAboutSettings}
-          className={styles.containerReviewAboutCard}
+          className={`${styles.containerReviewAboutCard}`}
+          dotsColor="white"
           refSlider={sliderRef}
           component={REVIEW_ABOUT_ARRAY.map((review) => (
             <ReviewAboutCard
