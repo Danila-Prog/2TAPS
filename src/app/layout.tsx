@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"), // заменить на домен
 
   title: "Two Tap",
-
+  icons: "/icons/logo.png",
   description:
     "Закажите современный сайт, лендинг или интернет-магазин у экспертов Two Tap. Быстро, качественно и с гарантией результата!",
 

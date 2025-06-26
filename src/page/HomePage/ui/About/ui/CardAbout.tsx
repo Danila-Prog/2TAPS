@@ -14,23 +14,14 @@ export const CardAbout = ({ title, description }: ICardAbout) => {
       <div className={styles.descriptionBlock}>
         <p>{description}</p>
 
-        <Link href="#applicationForm">
-          <Button
-            size="lg"
-            variantColor="lightViolet"
-            className={styles.buttonLaptop}
-          >
+        <Link href="#applicationForm" className={styles.buttonLaptop}>
+          <Button size="lg" variantColor="lightViolet">
             Подробнее
           </Button>
         </Link>
 
-        <Link href="#applicationForm">
-          <Button
-            typeChildren="image"
-            variantColor="darkViolet"
-            size="image"
-            className={styles.buttonMobile}
-          />
+        <Link href="#applicationForm" className={styles.buttonMobile}>
+          <Button typeChildren="image" variantColor="darkViolet" size="image" />
         </Link>
       </div>
     </article>
