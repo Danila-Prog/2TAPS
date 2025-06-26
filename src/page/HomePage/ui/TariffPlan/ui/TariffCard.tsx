@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/shared";
 import styles from "./TariffCard.module.scss";
+import Link from "next/link";
 
 interface IListWork {
   nameWork: string;
@@ -36,9 +37,11 @@ export const TariffCard = ({ name, price, listWork }: ITariffCard) => {
 
       <footer className={styles.footerTariffCard}>
         <span className={styles.priceTariff}>от {price}</span>
-        <Button size="xl" variantColor="accentOutline">
-          Связаться
-        </Button>
+        <Link href="#applicationForm">
+          <Button size="xl" variantColor="accentOutline">
+            Связаться
+          </Button>
+        </Link>
       </footer>
     </article>
   );

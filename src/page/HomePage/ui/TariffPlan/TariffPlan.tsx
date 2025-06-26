@@ -5,7 +5,7 @@ import { ProjectSlider } from "@/shared";
 
 export const TariffPlan = () => {
   return (
-    <section className={styles.tariffPlan}>
+    <section className={styles.tariffPlan} id="tariffPlan">
       <h2>Тарифные планы</h2>
 
       <ProjectSlider

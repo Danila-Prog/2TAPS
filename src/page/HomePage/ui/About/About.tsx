@@ -4,7 +4,7 @@ import { CARD_ABOUT } from "./lib/consts";
 
 export const About = () => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <h2>Давайте знакомиться!</h2>
 
       <main className={styles.aboutDescription}>

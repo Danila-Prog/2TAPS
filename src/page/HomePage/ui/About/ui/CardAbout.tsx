@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./CardAbout.module.scss";
 import { Button } from "@/shared";
 
@@ -12,20 +13,25 @@ export const CardAbout = ({ title, description }: ICardAbout) => {
       <h3>{title}</h3>
       <div className={styles.descriptionBlock}>
         <p>{description}</p>
-        <Button
-          size="lg"
-          variantColor="lightViolet"
-          className={styles.buttonLaptop}
-        >
-          Подробнее
-        </Button>
 
-        <Button
-          typeChildren="image"
-          variantColor="darkViolet"
-          size="image"
-          className={styles.buttonMobile}
-        />
+        <Link href="#applicationForm">
+          <Button
+            size="lg"
+            variantColor="lightViolet"
+            className={styles.buttonLaptop}
+          >
+            Подробнее
+          </Button>
+        </Link>
+
+        <Link href="#applicationForm">
+          <Button
+            typeChildren="image"
+            variantColor="darkViolet"
+            size="image"
+            className={styles.buttonMobile}
+          />
+        </Link>
       </div>
     </article>
   );

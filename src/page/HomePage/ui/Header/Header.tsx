@@ -8,7 +8,7 @@ import { LIST_TAB } from "./lib/listTab";
 import { Tab } from "./ui/Tab/Tab";
 import { ReactElement, useEffect } from "react";
 import cross from "/public/svg/cross.svg";
-
+import Link from "next/link";
 interface IHeader {
   burgerMenu: ReactElement;
   isActiveBurgerMenu: boolean;
@@ -44,9 +44,11 @@ export const Header = ({
             </ul>
           </nav>
 
-          <Button size="md" variantColor="primaryOutline">
-            Оставить заявку
-          </Button>
+          <Link href="#applicationForm">
+            <Button size="md" variantColor="primaryOutline">
+              Оставить заявку
+            </Button>
+          </Link>
         </div>
 
         <div className={styles.containerAdaptiveMobile}>

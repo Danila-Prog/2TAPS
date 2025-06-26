@@ -15,7 +15,7 @@ export const ReviewAbout = () => {
   const getToPrevSlide = () => sliderRef.current?.slickPrev();
 
   return (
-    <section className={styles.reviewAbout}>
+    <section className={styles.reviewAbout} id="reviewsAbout">
       <h2>Отзывы о нас</h2>
 
       <div className={styles.containerInfoReviewAbout}>

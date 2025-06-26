@@ -13,7 +13,11 @@ export const HeaderMainWrapper = () => {
       <Header
         isActiveBurgerMenu={isActiveBurgerMenu}
         toggleSetIsActiveBurgerMenu={toggleSetIsActiveBurgerMenu}
-        burgerMenu={<BurgerMenu />}
+        burgerMenu={
+          <BurgerMenu
+            toggleSetIsActiveBurgerMenu={toggleSetIsActiveBurgerMenu}
+          />
+        }
       />
       <Main isActiveBurgerMenu={isActiveBurgerMenu} />
     </>

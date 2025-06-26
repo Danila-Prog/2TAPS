@@ -1,15 +1,20 @@
 import Image from "next/image";
 import styles from "./BurgerMenu.module.scss";
 import burgerMenu_image from "/public/icons/burgerMenu_image.png";
-import { MENU_ITEMS } from "./lib/consts";
+import { LIST_TAB_BURGER_MENU } from "./lib/consts";
+import Link from "next/link";
 
-export const BurgerMenu = () => {
+interface IBurgerMenu {
+  toggleSetIsActiveBurgerMenu: () => void;
+}
+
+export const BurgerMenu = ({ toggleSetIsActiveBurgerMenu }: IBurgerMenu) => {
   return (
     <nav className={styles.burgerMenu}>
       <ul>
-        {MENU_ITEMS.map((item) => (
-          <li key={item.id}>
-            <button>{item.label}</button>
+        {LIST_TAB_BURGER_MENU.map((item) => (
+          <li key={item.id} onClick={toggleSetIsActiveBurgerMenu}>
+            <Link href={item.idTab}>{item.nameTab}</Link>
           </li>
         ))}
       </ul>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import main_logo from "/public/icons/main_logo.png";
 import { Button } from "@/shared";
 import styles from "./Main.module.scss";
+import Link from "next/link";
 
 interface IMain {
   isActiveBurgerMenu: boolean;
@@ -31,14 +32,15 @@ export const Main = ({ isActiveBurgerMenu }: IMain) => {
           его за свой и продвигаем, как для себя. Давайте сотрудничать!
         </span>
       </p>
-
-      <Button
-        size="sm"
-        variantColor="primaryOutline"
-        className={styles.buttonMain}
-      >
-        Хочу сайт!
-      </Button>
+      <Link href="#applicationForm">
+        <Button
+          size="sm"
+          variantColor="primaryOutline"
+          className={styles.buttonMain}
+        >
+          Хочу сайт!
+        </Button>
+      </Link>
     </main>
   );
 };

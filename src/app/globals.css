@@ -6,10 +6,13 @@
 
 html {
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
-body {
-  overscroll-behavior: none;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @media screen and (min-width: 425px) {

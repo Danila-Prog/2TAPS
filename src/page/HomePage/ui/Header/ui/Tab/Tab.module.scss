@@ -1,32 +1,30 @@
 .tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 12.207vw;
-    height: 7.422vw;
-    max-width: 176px;
-    max-height: 80px;
-    cursor: pointer;
-
-    button {
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12.207vw;
+        height: 7.422vw;
+        max-width: 176px;
+        max-height: 80px;
         font-size: 20px;
         font-family: $font-hikasami;
         color: $primary-white;
-        background: transparent;
-        border: none;
         cursor: pointer;
-    }
+        text-decoration: none;
+        transition: .3s ease-in-out;
 
-    transition: .3s ease-in-out;
-
-    &:hover {
-        background: $button-violet-light;
-        border-radius: 999999px;
+        &:hover {
+            background: $button-violet-light;
+            border-radius: 999999px;
+        }
     }
 }
 
 @media screen and (min-width: 1440px) {
     .tab {
-        max-height: 91px;
+        a {
+            max-height: 91px;
+        }
     }
 }

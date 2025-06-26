@@ -8,7 +8,7 @@ export const WhatWeCanDo = () => {
   const INFO_CARDS = useInfoCards();
 
   return (
-    <section className={styles.whatWeCanDo}>
+    <section className={styles.whatWeCanDo} id="whatWeCanDo">
       <h2>Что мы умеем?</h2>
       <div className={styles.groupInfoCard}>
         {INFO_CARDS.map((card) => (

@@ -21,7 +21,7 @@ export const ApplicationForm = () => {
   } = useApplicationForm(formRef);
 
   return (
-    <section className={styles.containerApplicationForm}>
+    <section className={styles.containerApplicationForm} id="applicationForm">
       <aside>
         <h3>Форма заявки</h3>
         <Image src={form_bg} alt="background form application" />
